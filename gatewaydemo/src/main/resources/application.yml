@@ -1,0 +1,28 @@
+server:
+  port: 8222
+spring:
+  application:
+    name: gatewayService
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+      - id: producer
+        uri: lb://producer
+        predicates:
+          - Path=/*/producer/**
+          - After=2021-07-20T10:42:47.789+08:00[Asia/Shanghai]
+          - Weight=group1, 2
+      - id: producer1
+        uri: lb://producer1
+        predicates:
+          - Path=/*/producer/**
+          - After=2021-07-20T10:42:47.789+08:00[Asia/Shanghai]
+          - Weight=group1, 8
+
