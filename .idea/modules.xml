@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/seataparent/account/account.iml" filepath="$PROJECT_DIR$/seataparent/account/account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seataparent/business/business.iml" filepath="$PROJECT_DIR$/seataparent/business/business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumer/consumer.iml" filepath="$PROJECT_DIR$/consumer/consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elkdemo/elkdemo.iml" filepath="$PROJECT_DIR$/elkdemo/elkdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gatewaydemo/gatewaydemo.iml" filepath="$PROJECT_DIR$/gatewaydemo/gatewaydemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafkademo/kafkademo.iml" filepath="$PROJECT_DIR$/kafkademo/kafkademo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/learn.iml" filepath="$PROJECT_DIR$/.idea/learn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seataparent/order/order.iml" filepath="$PROJECT_DIR$/seataparent/order/order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/producer/producer.iml" filepath="$PROJECT_DIR$/producer/producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rocketmqandseata/rocketmqandseata.iml" filepath="$PROJECT_DIR$/rocketmqandseata/rocketmqandseata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rocketmqdemo/rocketmqdemo.iml" filepath="$PROJECT_DIR$/rocketmqdemo/rocketmqdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seataparent/seataparent.iml" filepath="$PROJECT_DIR$/seataparent/seataparent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shardingdemo/shardingdemo.iml" filepath="$PROJECT_DIR$/shardingdemo/shardingdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seataparent/storage/storage.iml" filepath="$PROJECT_DIR$/seataparent/storage/storage.iml" />
+    </modules>
+  </component>
+</project>

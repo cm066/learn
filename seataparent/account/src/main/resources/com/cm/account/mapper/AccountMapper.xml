@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cm.account.mapper.AccountMapper" >
+
+    <update id="reduceAccount">
+        UPDATE account SET balance = balance-#{frozens},frozen = frozen+#{frozens} WHERE user_id = #{userId}
+    </update>
+
+    <update id="addAccount">
+        UPDATE account SET balance = balance+#{frozens},frozen = frozen-#{frozens} WHERE user_id = #{userId}
+    </update>
+    <update id="reduceFrozens">
+        UPDATE account SET frozen = frozen-#{frozens},use_money = use_money+#{frozens} WHERE user_id = #{userId}
+    </update>
+<!--    <insert id="create">-->
+<!--        INSERT INTO `order` (`id`,`user_id`,`product_id`,`count`,`money`,`status`)-->
+<!--        VALUES(#{id}, #{userId}, #{productId}, #{count}, #{money},1);-->
+<!--    </insert>-->
+<!--    <update id="updateStatus" >-->
+<!--        UPDATE `order` SET `status`=#{status} WHERE `id`=#{orderId};-->
+<!--    </update>-->
+<!--    <delete id="deleteById">-->
+<!--        DELETE FROM `order` WHERE `id`=#{orderId}-->
+<!--    </delete>-->
+</mapper>
