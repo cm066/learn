@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="orderdemo" />
+        <module name="rocketmqandseata" />
+        <module name="business" />
+        <module name="designparent" />
+        <module name="storage" />
+        <module name="rocketmqdemo" />
+        <module name="kafkademo" />
+        <module name="shardingdemo" />
+        <module name="gatewaydemo" />
+        <module name="elkdemo" />
+        <module name="producer" />
+        <module name="consumer" />
+        <module name="account" />
+        <module name="order" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="account" target="1.8" />
+      <module name="business" target="1.8" />
+      <module name="consumer" target="1.8" />
+      <module name="designparent" target="1.8" />
+      <module name="elkdemo" target="1.8" />
+      <module name="gatewaydemo" target="1.8" />
+      <module name="kafkademo" target="1.8" />
+      <module name="order" target="1.8" />
+      <module name="orderdemo" target="1.8" />
+      <module name="producer" target="1.8" />
+      <module name="rocketmqandseata" target="1.8" />
+      <module name="rocketmqdemo" target="1.8" />
+      <module name="seataparent" target="1.8" />
+      <module name="shardingdemo" target="1.8" />
+      <module name="storage" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="account" options="-parameters" />
+      <module name="business" options="-parameters" />
+      <module name="consumer" options="-parameters" />
+      <module name="elkdemo" options="-parameters" />
+      <module name="gatewaydemo" options="-parameters" />
+      <module name="order" options="-parameters" />
+      <module name="orderdemo" options="-parameters" />
+      <module name="producer" options="-parameters" />
+      <module name="rocketmqandseata" options="-parameters" />
+      <module name="seataparent" options="-parameters" />
+      <module name="shardingdemo" options="-parameters" />
+      <module name="storage" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -26,7 +26,6 @@ public class AccountServiceImpl implements AccountService {
     @Override
     public boolean reduceAccount1(Long userId, Integer frozens) {
         boolean b = accountMapper.reduceAccount(userId, frozens);
-        int i = 10 /0;
         return b;
     }
 }

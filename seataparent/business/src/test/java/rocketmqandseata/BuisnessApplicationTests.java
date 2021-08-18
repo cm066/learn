@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.UUID;
 
 @SpringBootTest()
@@ -36,6 +38,13 @@ class BuisnessApplicationTests {
     @Test
     public void test1(){
         System.out.println(UUID.randomUUID());
+        ArrayList<Object> objects = new ArrayList<>();
+        objects.add(11);
+        objects.remove(1);
+        HashMap<Object, Object> objectObjectHashMap = new HashMap<>();
+        objectObjectHashMap.put(1,1);
+        objectObjectHashMap.remove(1);
+//        Collections.shuffle();
     }
 
 }

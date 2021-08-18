@@ -1,0 +1,55 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: producer
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/prodcer?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        register-enabled: true
+#        namespace: f46bbdaa-f11e-414f-9530-e6a18cbf91f6
+      config:
+        server-addr: 127.0.0.1:8848
+        enabled: true
+        file-extension: yaml
+#        namespace: f46bbdaa-f11e-414f-9530-e6a18cbf91f6
+
+seata:
+  enabled: true
+  application-id: ${spring.application.name}
+  # 事务群组（可以每个应用独立取名，也可以使用相同的名字），要与服务端nacos-config.txt中service.vgroup_mapping的后缀对应
+  tx-service-group: my_test_tx_group
+  config:
+    type: nacos
+    # 需要和server在同一个注册中心下
+    nacos:
+#      namespace: f46bbdaa-f11e-414f-9530-e6a18cbf91f6
+      serverAddr: 127.0.0.1:8848
+      # 需要server端(registry和config)、nacos配置client端(registry和config)保持一致
+      group: SEATA_GROUP
+      username: "nacos"
+      password: "nacos"
+  registry:
+    type: nacos
+    nacos:
+      # 需要和server端保持一致，即server在nacos中的名称，默认为seata-server
+      application: seata-server
+      server-addr: 127.0.0.1:8848
+      group: SEATA_GROUP
+#      namespace: f46bbdaa-f11e-414f-9530-e6a18cbf91f6
+      username: "nacos"
+      password: "nacos"
+feign:
+  hystrix:
+    enabled: true
+#mybatis:
+#  mapperLocations: classpath:mapper/*.xml
+logging:
+  level:
+    com.alibaba.nacos.client.config.impl: WARN
