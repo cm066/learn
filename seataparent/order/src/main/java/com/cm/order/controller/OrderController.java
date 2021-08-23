@@ -1,8 +1,8 @@
 package com.cm.order.controller;
 
-import com.cm.order.entity.Order;
 import com.cm.order.entity.Orders;
 import com.cm.order.service.OrderService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("order")
+@Slf4j
 public class OrderController {
 
    @Autowired
@@ -34,5 +35,13 @@ public class OrderController {
                                 @PathVariable Integer moneyFrozens,@PathVariable Integer ticketFrozens){
         boolean b = orderService.toOrder(id, userId, moneyFrozens, ticketFrozens);
         return b;
+    }
+
+    @GetMapping("get1")
+    public String get1(){
+        log.info("这里是新日志，日志XXX:{}" , "abc");
+        int i = 0;
+//        int x = 3 / i;
+        return "ok";
     }
 }

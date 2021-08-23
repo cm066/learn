@@ -1,6 +1,7 @@
 package com.cm.account.controller;
 
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.cm.account.mapper.AccountMapper;
 import com.cm.account.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,10 +26,20 @@ public class AccountController {
         boolean b = accountService.reduceAccount(userId, frozens);
         return b;
     }
+//    @SentinelResource(value = )
     @GetMapping("/reduce1/{userId}/{frozens}")
     public boolean updateMOney1(@PathVariable Long userId, @PathVariable Integer frozens){
         boolean b = accountService.reduceAccount1(userId, frozens);
         return b;
     }
 
+    @SentinelResource(value = "te",fallback ="te1" )
+    @GetMapping("/te")
+    public String te(){
+        return "ok";
+    }
+
+    public String te1(){
+        return "ok1";
+    }
 }

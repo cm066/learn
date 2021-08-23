@@ -14,6 +14,7 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <spring-boot-admin-client.version>2.2.0</spring-boot-admin-client.version>
     </properties>
 
     <!--子模块order-service和storage-service的pom中添加nacos和seata依赖-->
@@ -85,6 +86,13 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+
+        <!--加入spring-boot-admin连接端-->
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
+            <version>${spring-boot-admin-client.version}</version>
         </dependency>
     </dependencies>
 
