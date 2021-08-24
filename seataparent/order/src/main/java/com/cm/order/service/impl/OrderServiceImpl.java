@@ -31,7 +31,7 @@ public class OrderServiceImpl extends ServiceImpl<OrdersMapper, Orders> implemen
     @Override
     public boolean insertOrder(Orders order) {
         int insert = baseMapper.insert(order);
-        accountClient.updateMOney1(123456L,200);
+        accountClient.updateMOney1(123456L, 200);
         producerClient.testProducer();
         System.out.println(RootContext.getXID());
         return insert > 0 ? true : false;
@@ -40,10 +40,10 @@ public class OrderServiceImpl extends ServiceImpl<OrdersMapper, Orders> implemen
 
     @GlobalTransactional
     @Override
-    public boolean toOrder(Long id, Long userId, Integer moneyFrozens,Integer ticketFrozens) {
+    public boolean toOrder(Long id, Long userId, Integer moneyFrozens, Integer ticketFrozens) {
 
-        storageClient.toTicket(id,ticketFrozens);
-        accountClient.updateMOney(userId,moneyFrozens);
+        storageClient.toTicket(id, ticketFrozens);
+        accountClient.updateMOney(userId, moneyFrozens);
         Orders orders = new Orders();
         orders.setProductNum(ticketFrozens);
         orders.setProductId(id);

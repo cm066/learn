@@ -20,7 +20,7 @@ public class TicketTccActionImpl implements TicketTccAction {
 
     @Transactional
     @Override
-    public boolean prepareDecreaseAccount( Long id, Integer frozens) {
+    public boolean prepareDecreaseAccount(Long id, Integer frozens) {
 
         log.info("检查库存，并冻结，id=" + id + "， frozens=" + frozens);
         Ticket ticket = ticketMapper.selectById(id);
@@ -53,6 +53,7 @@ public class TicketTccActionImpl implements TicketTccAction {
         return true;
 
     }
+
     @Transactional
     @Override
     public boolean rollback(BusinessActionContext businessActionContext) {

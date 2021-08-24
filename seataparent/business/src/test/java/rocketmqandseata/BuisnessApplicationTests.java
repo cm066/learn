@@ -26,15 +26,15 @@ class BuisnessApplicationTests {
     @Test
     void contextLoads() {
     }
+
     @Test
-    public void test()
-    {
+    public void test() {
         Msg msg = new Msg();
         msg.setProductId(1L);
         msg.setCurrentUse(1);
         String uuid = UUID.randomUUID().toString().replaceAll("-", "");
         msg.setUuid(uuid);
-        springTransactionProducer.sendMsg("mss1",msg);
+        springTransactionProducer.sendMsg("mss1", msg);
         try {
             Thread.sleep(100000L);
         } catch (InterruptedException e) {
@@ -43,19 +43,19 @@ class BuisnessApplicationTests {
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         System.out.println(UUID.randomUUID());
         ArrayList<Object> objects = new ArrayList<>();
         objects.add(11);
         objects.remove(1);
         HashMap<Object, Object> objectObjectHashMap = new HashMap<>();
-        objectObjectHashMap.put(1,1);
+        objectObjectHashMap.put(1, 1);
         objectObjectHashMap.remove(1);
 //        Collections.shuffle();
     }
 
     @Test
-    public void sendSimpleMail(){
+    public void sendSimpleMail() {
         // 构建一个邮件对象
         SimpleMailMessage message = new SimpleMailMessage();
         // 设置邮件主题

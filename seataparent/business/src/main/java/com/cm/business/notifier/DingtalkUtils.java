@@ -42,7 +42,6 @@ public class DingtalkUtils {
         resultMap.put("at", atItems);
 
 
-
 //        StringBuilder textMsgBuilder = new StringBuilder(
 //                "{ \"msgtype\":\"markdown\",\"markdown\":{\"title\":\"告警通知\",\"text\":\"");
 //        textMsgBuilder.append(textMsg);
@@ -59,7 +58,7 @@ public class DingtalkUtils {
             if (response.getStatusLine().getStatusCode() == HttpStatus.OK.value()) {
                 String result = EntityUtils.toString(response.getEntity(), "utf-8");
                 System.out.println(result);
-                log.info("执行结果：{}" , result);
+                log.info("执行结果：{}", result);
             }
             return Boolean.TRUE;
         } catch (Exception e) {

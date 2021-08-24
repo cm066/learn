@@ -125,7 +125,7 @@ public class DingtalkNotifier extends AbstractStatusChangeNotifier {
         });
     }
 
-    public  void sendSimpleMail(String  messageText) {
+    public void sendSimpleMail(String messageText) {
         // 构建一个邮件对象
         SimpleMailMessage message = new SimpleMailMessage();
         // 设置邮件主题

@@ -9,12 +9,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 //,fallback = StorageClientBack.class
-@FeignClient(value = "storage-service",fallback = StorageClientBack.class )
+@FeignClient(value = "storage-service", fallback = StorageClientBack.class)
 @Component
 public interface StorageClient {
 
     @GetMapping("/storage/reduce1/{productId}/{currentUse}")
     boolean redcuce1(@PathVariable Long productId, @PathVariable int currentUse);
+
     @GetMapping("/storage/reduce2/{productId}/{currentUse}")
     R redcuce2(@PathVariable Long productId, @PathVariable int currentUse);
 }

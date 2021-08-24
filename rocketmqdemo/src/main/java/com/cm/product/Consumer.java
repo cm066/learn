@@ -22,7 +22,7 @@ public class Consumer {
         consumer.setNamesrvAddr("192.168.224.120:9876");
         consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
         consumer.setMaxReconsumeTimes(3);
-        consumer.subscribe("someTopic34","*");
+        consumer.subscribe("someTopic34", "*");
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs, ConsumeConcurrentlyContext context) {

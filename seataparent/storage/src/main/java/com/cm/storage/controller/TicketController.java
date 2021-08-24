@@ -15,7 +15,7 @@ public class TicketController {
     private TicketService ticketService;
 
     @GetMapping("/toTicket/{id}/{frozens}")
-    public boolean toTicket(@PathVariable Long id, @PathVariable Integer frozens){
+    public boolean toTicket(@PathVariable Long id, @PathVariable Integer frozens) {
         boolean b = ticketService.reduceTicket(id, frozens);
         return b;
     }

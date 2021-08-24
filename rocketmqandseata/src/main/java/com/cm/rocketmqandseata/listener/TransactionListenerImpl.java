@@ -15,7 +15,7 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
     private static Map<String, RocketMQLocalTransactionState> STATE_MAP = new HashMap<>();
 
     /**
-     *  执行业务逻辑
+     * 执行业务逻辑
      *
      * @param message
      * @param o
@@ -23,7 +23,7 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
      */
     @Override
     public RocketMQLocalTransactionState executeLocalTransaction(Message message, Object o) {
-        String transId = (String)message.getHeaders().get(RocketMQHeaders.TRANSACTION_ID);
+        String transId = (String) message.getHeaders().get(RocketMQHeaders.TRANSACTION_ID);
 
         try {
             System.out.println("执行操作");
@@ -48,7 +48,7 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
      */
     @Override
     public RocketMQLocalTransactionState checkLocalTransaction(Message message) {
-        String transId = (String)message.getHeaders().get(RocketMQHeaders.TRANSACTION_ID);
+        String transId = (String) message.getHeaders().get(RocketMQHeaders.TRANSACTION_ID);
         System.out.println("回查消息 -> transId = " + transId + ", state = " + STATE_MAP.get(transId));
         return STATE_MAP.get(transId);
     }

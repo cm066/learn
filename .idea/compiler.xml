@@ -18,16 +18,23 @@
         <module name="gatewaydemo" />
         <module name="elkdemo" />
         <module name="producer" />
+        <module name="dockerdemo" />
+        <module name="bash" />
         <module name="consumer" />
         <module name="account" />
         <module name="order" />
+        <module name="dockerdemo1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="account" target="1.8" />
+      <module name="base" target="1.8" />
+      <module name="bash" target="1.8" />
       <module name="business" target="1.8" />
       <module name="consumer" target="1.8" />
       <module name="designparent" target="1.8" />
+      <module name="dockerdemo" target="1.8" />
+      <module name="dockerdemo1" target="1.8" />
       <module name="elkdemo" target="1.8" />
       <module name="gatewaydemo" target="1.8" />
       <module name="kafkademo" target="1.8" />
@@ -46,6 +53,8 @@
       <module name="account" options="-parameters" />
       <module name="business" options="-parameters" />
       <module name="consumer" options="-parameters" />
+      <module name="dockerdemo" options="-parameters" />
+      <module name="dockerdemo1" options="-parameters" />
       <module name="elkdemo" options="-parameters" />
       <module name="gatewaydemo" options="-parameters" />
       <module name="order" options="-parameters" />

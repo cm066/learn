@@ -15,7 +15,7 @@ public class Test2 {
         ArrayList<Object> objects = new ArrayList<>();
         objects.add(1);
         HashMap<String, String> map = new HashMap<>();
-        map.put("1","1");
+        map.put("1", "1");
 
     }
 }

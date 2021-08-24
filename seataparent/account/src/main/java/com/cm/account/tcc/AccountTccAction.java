@@ -12,8 +12,8 @@ public interface AccountTccAction {
 
     @TwoPhaseBusinessAction(name = "accountTccAction", commitMethod = "commit", rollbackMethod = "rollback")
     boolean prepareDecreaseAccount(
-                                   @BusinessActionContextParameter(paramName = "userId") Long userId,
-                                   @BusinessActionContextParameter(paramName = "frozens") Integer frozens);
+            @BusinessActionContextParameter(paramName = "userId") Long userId,
+            @BusinessActionContextParameter(paramName = "frozens") Integer frozens);
 
     boolean commit(BusinessActionContext businessActionContext);
 

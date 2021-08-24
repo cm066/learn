@@ -5,7 +5,7 @@ import io.seata.core.exception.TransactionException;
 
 public interface BuisnessService {
 
-     boolean toOrder(Long productId,int currentUse) throws TransactionException;
+    boolean toOrder(Long productId, int currentUse) throws TransactionException;
 
-     void toSendMsg(Msg msg);
+    void toSendMsg(Msg msg);
 }

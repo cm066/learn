@@ -11,18 +11,19 @@ public class ICBCTransactionlistener implements TransactionListener {
 
     /**
      * 消息预提交成功后就会触发该方法的执行,用于完成本地事务
+     *
      * @param message
      * @param o
      * @return
      */
     @Override
     public LocalTransactionState executeLocalTransaction(Message message, Object o) {
-        System.out.println("预提交消息成功:"+message);
-        if (StringUtils.equals("TAGA",message.getTags())){
+        System.out.println("预提交消息成功:" + message);
+        if (StringUtils.equals("TAGA", message.getTags())) {
             return LocalTransactionState.COMMIT_MESSAGE;
-        }else if (StringUtils.equals("TAGB",message.getTags())){
+        } else if (StringUtils.equals("TAGB", message.getTags())) {
             return LocalTransactionState.ROLLBACK_MESSAGE;
-        }else if (StringUtils.equals("TAGC",message.getTags())){
+        } else if (StringUtils.equals("TAGC", message.getTags())) {
             return LocalTransactionState.UNKNOW;
         }
         return LocalTransactionState.UNKNOW;
@@ -38,7 +39,7 @@ public class ICBCTransactionlistener implements TransactionListener {
 
     @Override
     public LocalTransactionState checkLocalTransaction(MessageExt messageExt) {
-        System.out.println("执行消息回查"+messageExt.getTags());
+        System.out.println("执行消息回查" + messageExt.getTags());
         return LocalTransactionState.COMMIT_MESSAGE;
     }
 }

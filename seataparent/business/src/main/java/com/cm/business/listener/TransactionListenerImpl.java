@@ -23,8 +23,9 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
 
     @Autowired
     private BuisnessService buisnessService;
+
     /**
-     *  执行业务逻辑
+     * 执行业务逻辑
      *
      * @param message
      * @param o
@@ -35,14 +36,14 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
         try {
             String s = new String((byte[]) message.getPayload());
             Msg msg = JSON.parseObject(s, Msg.class);
-            log.error("发送半消息{}成功，执行其他事务消息",msg);
+            log.error("发送半消息{}成功，执行其他事务消息", msg);
             // 执行本地事务和利用seata AT模式保证分布式的完成
             boolean b = buisnessService.toOrder(msg.getProductId(), msg.getCurrentUse());
-            if (b){ //本地事务和seata事务执行成功，让rocketmq发送消息
+            if (b) { //本地事务和seata事务执行成功，让rocketmq发送消息
                 // 返回事务状态给生产者
-                log.info("其他事务执行成功结果为{}，先提交RocketMQ事务消息",b);
+                log.info("其他事务执行成功结果为{}，先提交RocketMQ事务消息", b);
                 return RocketMQLocalTransactionState.COMMIT;
-            }else {
+            } else {
                 log.info("其他事务执行失败，回滚RocketMQ事务消息");
                 return RocketMQLocalTransactionState.ROLLBACK;
             }
@@ -57,12 +58,13 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
     /**
      * 当消息发送到rocketmq失败回调执行的方法
      * 回查事务消息
+     *
      * @param message
      * @return
      */
     @Override
     public RocketMQLocalTransactionState checkLocalTransaction(Message message) {
-        String transId = (String)message.getHeaders().get(RocketMQHeaders.TRANSACTION_ID);
+        String transId = (String) message.getHeaders().get(RocketMQHeaders.TRANSACTION_ID);
         //在这里回查其他事务的信息，根据其他事务的信息来执行
         return RocketMQLocalTransactionState.ROLLBACK;
     }

@@ -23,7 +23,7 @@ public class IntegralsServiceImpl implements IntegralsService {
         in.setCount(100);
         in.setUserId(989898L);
         System.err.println(Thread.currentThread().getId());
-        R.xid.put(Thread.currentThread().getId()+"",xid);
+        R.xid.put(Thread.currentThread().getId() + "", xid);
 
 //        int i = 10 / 0;
         int insert = integralMapper.insert(in);

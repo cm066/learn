@@ -7,10 +7,12 @@ import java.util.Date;
 
 public class SendSimpleMailTest {
     private JavaMailSender javaMailSender;
-    public SendSimpleMailTest(JavaMailSender javaMailSender){
+
+    public SendSimpleMailTest(JavaMailSender javaMailSender) {
         this.javaMailSender = javaMailSender;
     }
-    public  void sendSimpleMail(){
+
+    public void sendSimpleMail() {
         // 构建一个邮件对象
         SimpleMailMessage message = new SimpleMailMessage();
         // 设置邮件主题

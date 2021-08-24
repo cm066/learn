@@ -22,24 +22,25 @@ public class AccountController {
     private AccountService accountService;
 
     @GetMapping("/reduce/{userId}/{frozens}")
-    public boolean updateMOney(@PathVariable Long userId, @PathVariable Integer frozens){
+    public boolean updateMOney(@PathVariable Long userId, @PathVariable Integer frozens) {
         boolean b = accountService.reduceAccount(userId, frozens);
         return b;
     }
-//    @SentinelResource(value = )
+
+    //    @SentinelResource(value = )
     @GetMapping("/reduce1/{userId}/{frozens}")
-    public boolean updateMOney1(@PathVariable Long userId, @PathVariable Integer frozens){
+    public boolean updateMOney1(@PathVariable Long userId, @PathVariable Integer frozens) {
         boolean b = accountService.reduceAccount1(userId, frozens);
         return b;
     }
 
-    @SentinelResource(value = "te",fallback ="te1" )
+    @SentinelResource(value = "te", fallback = "te1")
     @GetMapping("/te")
-    public String te(){
+    public String te() {
         return "ok";
     }
 
-    public String te1(){
+    public String te1() {
         return "ok1";
     }
 }

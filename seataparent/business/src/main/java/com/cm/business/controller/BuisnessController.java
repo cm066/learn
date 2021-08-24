@@ -32,7 +32,7 @@ public class BuisnessController {
     JavaMailSender javaMailSender;
 
     @GetMapping("toOrder/{productId}/{currentUse}")
-    public String toOrder(@PathVariable Long productId, @PathVariable int currentUse){
+    public String toOrder(@PathVariable Long productId, @PathVariable int currentUse) {
         Msg msg = new Msg();
         msg.setProductId(productId);
         msg.setCurrentUse(currentUse);
@@ -44,7 +44,7 @@ public class BuisnessController {
     }
 
     @GetMapping("/insert")
-    public String  insert(){
+    public String insert() {
         Integrals in = new Integrals();
         in.setCount(100);
         in.setUserId(989898L);
@@ -53,7 +53,7 @@ public class BuisnessController {
     }
 
     @GetMapping("/insert1")
-    public R insert1(){
+    public R insert1() {
         Integrals in = new Integrals();
         in.setCount(100);
         in.setUserId(989898L);
@@ -63,12 +63,12 @@ public class BuisnessController {
 
     @GetMapping("/toOrder1/{productId}/{currentUse}")
     public R toOrder1(@PathVariable Long productId, @PathVariable int currentUse) throws TransactionException {
-        buisnessService.toOrder(productId,currentUse);
+        buisnessService.toOrder(productId, currentUse);
         return R.ok();
     }
 
     @GetMapping("test1")
-    public String sendSimpleMail(){
+    public String sendSimpleMail() {
         // 构建一个邮件对象
         SimpleMailMessage message = new SimpleMailMessage();
         // 设置邮件主题

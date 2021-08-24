@@ -15,6 +15,6 @@ public class DLQConsumer implements RocketMQListener<String> {
 
     @Override
     public void onMessage(String msg) {
-        System.out.println("从重试队列里面获取到的消息："+ msg);
+        System.out.println("从重试队列里面获取到的消息：" + msg);
     }
 }

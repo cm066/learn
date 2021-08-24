@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class StorageClientBack implements StorageClient {
     @Override
-    public boolean redcuce1(Long productId, int currentUse)  {
+    public boolean redcuce1(Long productId, int currentUse) {
 
 //        feign远程调用失败，回滚执行全局事务
         try {

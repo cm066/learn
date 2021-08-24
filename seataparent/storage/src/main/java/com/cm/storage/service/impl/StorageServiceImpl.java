@@ -13,7 +13,6 @@ public class StorageServiceImpl implements StorageService {
     private StorageMapper storageMapper;
 
 
-
     @Override
     public boolean changeUse(long productId, int currentUse) {
 //        int i1 = 10 /0;

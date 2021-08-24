@@ -9,8 +9,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface StorageMapper extends BaseMapper<Storage> {
 
-    int reduceStorage(Long productId,Integer use);
+    int reduceStorage(Long productId, Integer use);
 
     @Update("UPDATE STORAGE SET total=total-#{currentUse},used=used+#{currentUse} WHERE id=#{productId}")
-    int updateUsed(@Param("productId") long productId,@Param("currentUse") int currentUse);
+    int updateUsed(@Param("productId") long productId, @Param("currentUse") int currentUse);
 }

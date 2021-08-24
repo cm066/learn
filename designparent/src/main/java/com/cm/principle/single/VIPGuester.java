@@ -1,6 +1,6 @@
 package com.cm.principle.single;
 
-public class VIPGuester implements IVedivUserService{
+public class VIPGuester implements IVedivUserService {
     @Override
     public void definition() {
         System.out.println("VIP客户清晰度1080P");

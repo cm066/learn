@@ -30,7 +30,7 @@ public class TransactionProducer {
         producer.setTransactionListener(new ICBCTransactionlistener());
         producer.start();
 
-        String[] tags = {"TAGA","TAGB","TAGC"};
+        String[] tags = {"TAGA", "TAGB", "TAGC"};
         for (int i = 0; i < 3; i++) {
             byte[] body = ("HI," + i).getBytes();
             Message msg = new Message("TTopic1", tags[i], body);

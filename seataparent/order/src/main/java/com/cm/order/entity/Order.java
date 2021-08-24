@@ -1,7 +1,6 @@
 package com.cm.order.entity;
 
 
-
 import lombok.Data;
 
 

@@ -26,13 +26,14 @@ public class AyncProducer {
         for (int i = 0; i < 100; i++) {
             byte[] body = ("Hi," + i).getBytes();
             Message msg = new Message("myTopic34", "myTag", body);
-            msg.setKeys("my"+i);
+            msg.setKeys("my" + i);
             producer.send(msg, new SendCallback() {
                 //当producer接收到mq发送来的ack后，就会触发该回调函数
                 @Override
                 public void onSuccess(SendResult sendResult) {
                     System.out.println(sendResult);
                 }
+
                 @Override
                 public void onException(Throwable throwable) {
                     throwable.printStackTrace();

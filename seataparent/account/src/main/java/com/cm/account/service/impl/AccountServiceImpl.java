@@ -18,8 +18,8 @@ public class AccountServiceImpl implements AccountService {
     @Override
     public boolean reduceAccount(Long userId, Integer frozens) {
 
-        boolean b = accountTccAction.prepareDecreaseAccount( userId, frozens);
-        int i = 10/0;
+        boolean b = accountTccAction.prepareDecreaseAccount(userId, frozens);
+        int i = 10 / 0;
         return b;
     }
 

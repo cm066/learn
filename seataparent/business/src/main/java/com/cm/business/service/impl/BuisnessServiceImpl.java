@@ -28,7 +28,7 @@ public class BuisnessServiceImpl implements BuisnessService {
 
     @GlobalTransactional
     @Override
-    public boolean toOrder(Long productId, int currentUse)  {
+    public boolean toOrder(Long productId, int currentUse) {
 
 
 //        try {
@@ -42,7 +42,7 @@ public class BuisnessServiceImpl implements BuisnessService {
 //                transactionException.printStackTrace();
 //            }
 //        }
-        R.xid.put("1",RootContext.getXID());
+        R.xid.put("1", RootContext.getXID());
         storageClient.redcuce2(productId, currentUse);
         System.out.println(RootContext.getXID());
         orderClient.insertOrder(productId, currentUse);

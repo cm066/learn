@@ -46,6 +46,7 @@ public class SnowFlake {
 
     /**
      * 产生下一个I
+     *
      * @return
      */
     public synchronized long nextId() {

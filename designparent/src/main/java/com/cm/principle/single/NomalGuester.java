@@ -1,6 +1,6 @@
 package com.cm.principle.single;
 
-public class NomalGuester implements IVedivUserService{
+public class NomalGuester implements IVedivUserService {
     @Override
     public void definition() {
         System.out.println("普通用户，清晰度为480");

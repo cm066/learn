@@ -8,5 +8,5 @@ public interface OrderService {
 
     boolean insertOrder(Orders order);
 
-    boolean toOrder(Long id,Long userId,Integer moneyFrozens,Integer ticketFrozens);
+    boolean toOrder(Long id, Long userId, Integer moneyFrozens, Integer ticketFrozens);
 }

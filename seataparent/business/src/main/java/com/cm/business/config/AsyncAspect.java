@@ -27,7 +27,7 @@ public class AsyncAspect {
         System.out.println("111111111");
         System.err.println(Thread.currentThread().getId());
         System.out.println("方法异常时执行.....");
-        System.err.println(R.xid.get(Thread.currentThread().getId()+""));
+        System.err.println(R.xid.get(Thread.currentThread().getId() + ""));
         try {
             GlobalTransactionContext.reload(R.xid.get("1")).rollback();
         } catch (TransactionException e) {

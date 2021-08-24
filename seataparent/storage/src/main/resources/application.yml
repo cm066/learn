@@ -13,12 +13,12 @@ spring:
       discovery:
         server-addr: 127.0.0.1:8848
         register-enabled: true
-#        namespace: f46bbdaa-f11e-414f-9530-e6a18cbf91f6
+      #        namespace: f46bbdaa-f11e-414f-9530-e6a18cbf91f6
       config:
         server-addr: 127.0.0.1:8848
         enabled: true
         file-extension: yaml
-#        namespace: f46bbdaa-f11e-414f-9530-e6a18cbf91f6
+  #        namespace: f46bbdaa-f11e-414f-9530-e6a18cbf91f6
   boot:
     admin:
       client:
@@ -34,7 +34,7 @@ seata:
     type: nacos
     # 需要和server在同一个注册中心下
     nacos:
-#      namespace: f46bbdaa-f11e-414f-9530-e6a18cbf91f6
+      #      namespace: f46bbdaa-f11e-414f-9530-e6a18cbf91f6
       serverAddr: 127.0.0.1:8848
       # 需要server端(registry和config)、nacos配置client端(registry和config)保持一致
       group: SEATA_GROUP
@@ -47,7 +47,7 @@ seata:
       application: seata-server
       server-addr: 127.0.0.1:8848
       group: SEATA_GROUP
-#      namespace: f46bbdaa-f11e-414f-9530-e6a18cbf91f6
+      #      namespace: f46bbdaa-f11e-414f-9530-e6a18cbf91f6
       username: "nacos"
       password: "nacos"
 #配置mapper xml文件的路径

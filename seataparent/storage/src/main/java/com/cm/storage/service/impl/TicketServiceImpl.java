@@ -10,9 +10,10 @@ public class TicketServiceImpl implements TicketService {
 
     @Autowired
     private TicketTccAction ticketTccAction;
+
     @Override
     public boolean reduceTicket(Long id, Integer frozens) {
-        boolean b = ticketTccAction.prepareDecreaseAccount( id, frozens);
+        boolean b = ticketTccAction.prepareDecreaseAccount(id, frozens);
 
         return b;
     }

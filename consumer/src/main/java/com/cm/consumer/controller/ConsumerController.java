@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ConsumerController {
 
     @GetMapping("test/producer")
-    public String testProducer(){
+    public String testProducer() {
         System.out.println(1);
         return "ok1";
     }

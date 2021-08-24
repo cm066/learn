@@ -1,7 +1,6 @@
 package com.cm.rocketmqandseata.producer;
 
 
-
 import org.apache.rocketmq.spring.core.RocketMQTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.Message;
@@ -23,7 +22,7 @@ public class SpringTransactionProducer {
     public void sendMsg(String topic, String msg) {
         Message message = MessageBuilder.withPayload(msg).build();
         // myTransactionGroup要和@RocketMQTransactionListener(txProducerGroup = "myTransactionGroup")定义的一致
-        this.rocketMQTemplate.sendMessageInTransaction("myTransactionGroup",topic,message, null);
+        this.rocketMQTemplate.sendMessageInTransaction("myTransactionGroup", topic, message, null);
         System.out.println("发送消息成功");
     }
 }

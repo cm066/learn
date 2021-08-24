@@ -2,6 +2,7 @@ package com.cm.shardingdemo;
 
 //import com.cm.shardingdemo.entity.Course;
 //import com.cm.shardingdemo.mapper.CourseMapper;
+
 import com.cm.shardingdemo.entity.Course;
 import com.cm.shardingdemo.mapper.CourseMapper;
 import org.junit.jupiter.api.Test;
@@ -23,11 +24,10 @@ class ShardingdemoApplicationTests {
 //    StringRedisTemplate stringRedisTemplate;
 
 
-
     //=======================测试水平分表===================
     //添加课程的方法
     @Test
-    public void test1(){
+    public void test1() {
         Course course = new Course();
         course.setCname("java");
         course.setUserId(100L);
@@ -36,6 +36,7 @@ class ShardingdemoApplicationTests {
 //        stringRedisTemplate.boundValueOps("ll").setIfAbsent("11");
 //        boolean
     }
+
     @Test
     public void addCourse() {
 //        for(int i=1;i<=10;i++) {

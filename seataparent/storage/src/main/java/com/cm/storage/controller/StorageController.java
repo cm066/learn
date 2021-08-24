@@ -22,7 +22,7 @@ public class StorageController {
     private StorageService storageService;
 
     @GetMapping("/reduce")
-    public String redcuce(){
+    public String redcuce() {
         Storage storage = new Storage();
         storage.setTotal(100);
         storage.setProductId(1L);
@@ -30,14 +30,16 @@ public class StorageController {
         storageMapper.insert(storage);
         return "ok";
     }
+
     @GetMapping("/reduce1/{productId}/{currentUse}")
-    public boolean redcuce1(@PathVariable Long productId,@PathVariable int currentUse){
+    public boolean redcuce1(@PathVariable Long productId, @PathVariable int currentUse) {
 
         boolean b = storageService.changeUse(productId, currentUse);
-       return b;
+        return b;
     }
+
     @GetMapping("/reduce2/{productId}/{currentUse}")
-    public R redcuce2(@PathVariable Long productId,@PathVariable int currentUse){
+    public R redcuce2(@PathVariable Long productId, @PathVariable int currentUse) {
 
         boolean b = storageService.changeUse(productId, currentUse);
         return R.ok();
