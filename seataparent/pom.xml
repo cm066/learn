@@ -63,8 +63,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
-    </dependencies>
 
+        <!-- Sleuth+Zipkin  链路追踪 依赖 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
+    </dependencies>
+<!--    5.12.7-->
 
     <!--demo01父模块中添加依赖-->
     <dependencyManagement>

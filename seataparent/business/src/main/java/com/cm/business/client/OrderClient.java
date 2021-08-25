@@ -13,4 +13,7 @@ public interface OrderClient {
 
     @GetMapping("/order/reduce1/{productId}/{productNum}")
     boolean insertOrder(@PathVariable Long productId, @PathVariable Integer productNum);
+
+    @GetMapping("/kin/zipk")
+    public String testZikpin();
 }

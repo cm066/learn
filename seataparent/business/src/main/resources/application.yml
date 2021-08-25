@@ -29,6 +29,15 @@ spring:
         smtp:
           socketFactoryClass: javax.net.ssl.SSLSocketFactory
         debug: true
+  #新增链路追踪的配置  运行zipkin 采用的是docker的方式来运行的 docker run -d -p 9411:9411 openzipkin/zipkin
+  zipkin:
+    base-url: http://192.168.224.120:9411
+    discovery-client-enabled: false
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1
 #        namespace: f46bbdaa-f11e-414f-9530-e6a18cbf91f6
 seata:
   enabled: true
@@ -70,6 +79,7 @@ management:
   endpoint:
     health:
       show-details: always
+#增加链路追踪的配置
 #feign:
 #  hystrix:
 #    enabled: true

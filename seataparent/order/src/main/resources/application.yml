@@ -18,12 +18,23 @@ spring:
         server-addr: 127.0.0.1:8848
         enabled: true
         file-extension: yaml
-  # 配置spring-boot-admin服务端的地址
+  #新增链路追踪的配置
+  zipkin:
+    base-url: http://192.168.224.120:9411
+    discovery-client-enabled: false
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1
+  # 配置spring-boot-admin服务端的地址 spring.main.allow-bean-definition-overriding=true
   boot:
     admin:
       client:
         enabled: true
         url: http://localhost:6772
+  main:
+    allow-bean-definition-overriding: true
 #        namespace: f46bbdaa-f11e-414f-9530-e6a18cbf91f6
 
 seata:
