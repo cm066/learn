@@ -1,0 +1,36 @@
+version: "2.0"
+
+services:
+  demo:
+    build: #启动服务的时候首先利用build命令将Dockerfile打包成镜像然后在运行
+      context: /opt/demo
+      dockerfile: Dockerfile
+    container_name: demo
+    ports:
+      - "8081:8081"
+    networks:
+      - ems
+  tomcat:
+    image: tomcat:8.0-jre8 #依赖的镜像
+    container_name: tomcat #这个容器的名称
+    ports: #要暴露的端口
+      - "8081:8080"
+    volumes: #指定容器挂载目录
+      - apps:/usr/local/tomcat/webapps
+    depends_on: #程序启动需要有顺序关系，但是不会等着完全启动
+      - redis
+      - db
+    networks: #指定网桥
+      - ems
+    environment: #环境参数
+      - MYSQL_ROOT_PASSWORD=root
+    env_file: #加载配置文件
+      - mysql.env
+    command: /usr/local/redis.conf  #覆盖默认的配置文件
+volumes:
+  apps:
+
+networks:
+  ems:
+ #docker-compose 简单的来说就是容器编排的一个工具，可以利用docker-compose来启动多个容器，不用人工手动的去启动多个容器
+#可以在里面多个命令，就是容器编排的一个工具
