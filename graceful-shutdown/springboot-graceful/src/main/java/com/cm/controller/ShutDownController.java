@@ -63,7 +63,6 @@ public class ShutDownController {
 
     /**
      * 服务注销接口
-     *
      * @return
      */
     @GetMapping(value = "/api/nacos/deregister")
@@ -83,6 +82,11 @@ public class ShutDownController {
             return "error";
         }
         return "success";
+//        lifecycle:
+//        postStart:
+//        exec:
+//        command: ["/bin/sh", "-c", "crul http:localhot:3333/hello"]
+        //crul http:localhot:3333/api/nacos/deregister
     }
 
 }

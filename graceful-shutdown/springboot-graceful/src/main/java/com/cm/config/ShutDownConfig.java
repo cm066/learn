@@ -9,6 +9,7 @@ public class ShutDownConfig {
 
     @Bean
     public TerminateBean getTerminateBean() {
+
         return new TerminateBean();
     }
 }
