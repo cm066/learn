@@ -1,0 +1,28 @@
+2021-08-25 17:29:43.489 ERROR [,,,] 15552 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'feignHystrixBuilder', defined in class path resource [org/springframework/cloud/sleuth/instrument/web/client/feign/TraceFeignClientAutoConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/alibaba/cloud/seata/feign/SeataFeignClientAutoConfiguration.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2021-08-25 17:30:52.335 ERROR [,,,] 16068 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'feignHystrixBuilder', defined in class path resource [org/springframework/cloud/sleuth/instrument/web/client/feign/TraceFeignClientAutoConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/alibaba/cloud/seata/feign/SeataFeignClientAutoConfiguration.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+

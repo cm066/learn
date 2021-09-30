@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="distributed-lock" />
         <module name="orderdemo" />
         <module name="rocketmqandseata" />
         <module name="business" />
@@ -19,11 +20,13 @@
         <module name="elkdemo" />
         <module name="producer" />
         <module name="dockerdemo" />
+        <module name="juc" />
+        <module name="springboot-graceful" />
         <module name="bash" />
         <module name="consumer" />
         <module name="account" />
-        <module name="order" />
         <module name="dockerdemo1" />
+        <module name="order" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -33,10 +36,13 @@
       <module name="business" target="1.8" />
       <module name="consumer" target="1.8" />
       <module name="designparent" target="1.8" />
+      <module name="distributed-lock" target="1.8" />
       <module name="dockerdemo" target="1.8" />
       <module name="dockerdemo1" target="1.8" />
       <module name="elkdemo" target="1.8" />
       <module name="gatewaydemo" target="1.8" />
+      <module name="graceful-shutdown" target="1.8" />
+      <module name="juc" target="1.8" />
       <module name="kafkademo" target="1.8" />
       <module name="order" target="1.8" />
       <module name="orderdemo" target="1.8" />
@@ -45,6 +51,7 @@
       <module name="rocketmqdemo" target="1.8" />
       <module name="seataparent" target="1.8" />
       <module name="shardingdemo" target="1.8" />
+      <module name="springboot-graceful" target="1.8" />
       <module name="storage" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -53,16 +60,19 @@
       <module name="account" options="-parameters" />
       <module name="business" options="-parameters" />
       <module name="consumer" options="-parameters" />
+      <module name="distributed-lock" options="-parameters" />
       <module name="dockerdemo" options="-parameters" />
       <module name="dockerdemo1" options="-parameters" />
       <module name="elkdemo" options="-parameters" />
       <module name="gatewaydemo" options="-parameters" />
+      <module name="graceful-shutdown" options="-parameters" />
       <module name="order" options="-parameters" />
       <module name="orderdemo" options="-parameters" />
       <module name="producer" options="-parameters" />
       <module name="rocketmqandseata" options="-parameters" />
       <module name="seataparent" options="-parameters" />
       <module name="shardingdemo" options="-parameters" />
+      <module name="springboot-graceful" options="-parameters" />
       <module name="storage" options="-parameters" />
     </option>
   </component>
