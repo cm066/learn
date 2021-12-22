@@ -1,0 +1,268 @@
+server.port=8068
+#log
+project.name=ucode
+spring.application.name=aw
+spring.main.allow-bean-definition-overriding=true
+spring.data.mongodb.field-naming-strategy=org.springframework.data.mapping.model.CamelCaseAbbreviatingFieldNamingStrategy
+
+feign.hystrix.enabled=true
+
+
+ribbon.ReadTimeout=50000
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=50000
+#datasource
+spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+hibernate.validator.apply_to_ddl=false
+hibernate.validator.autoregister_listeners=false
+#redis
+spring.redis.database=9
+#spring.redis.host=redis-dev-ucode.aax6.cn
+#spring.redis.password=Ptu4pake
+spring.redis.port=6379
+spring.redis.ssl=false
+
+spring.profiles.include=codekey-test,codedb-test,cos-test,eureka-test
+eureka.client.service-url.defaultZone=http://localhost:8081/eureka/
+spring.redis.host=ucode-test-redis.aax6.cn
+spring.redis.password=GECWzPU4Yib
+redisson
+#sao.redisson.config=
+sao.redisson.wait-time=10
+sao.redisson.lock-time=10
+#core
+spring.mvc.locale=zh_CN
+so.sao.exception-handler.enable=true
+so.sao.redis-manager.enable=true
+spring.messages.basename=messages/common_messages
+spring.messages.cache-duration=-1
+spring.messages.encoding=utf-8
+#task
+sao.aw.task.tempDownloadPath=/data/gfs/tmpdata/
+sao.aw.task.tempFilePath=/awtmp
+sao.aw.task.printFilePath=${sao.blob.buckets.[1]}
+sao.aw.task.backFilePath=${sao.blob.buckets.[1]}
+sao.aw.task.bucketDir=${spring.application.name}/
+sao.aw.task.jobBucketDir=dm/
+sao.aw.task.oldBackFilePath=${sao.blob.buckets.[1]}
+sao.aw.task.maxChildTagSize=50000
+sao.aw.task.uri.beforetagcreate=http://code/api/tagbatch/v1/handle-file
+sao.aw.task.uri.tagcreate=http://code/api/tagbatch/v1/handle-nosql
+sao.aw.task.uri.thirdtagcreate=http://code/api/tagbatch/v1/handle-third-nosql
+sao.aw.task.uri.beforethirdtagcreate=http://code/api/tagbatch/v1/handle-third-file
+
+sao.redisson.config={\
+   "singleServerConfig":{\
+      "idleConnectionTimeout":10000,\
+      "pingTimeout":1000,\
+      "connectTimeout":10000,\
+      "timeout":3000,\
+      "retryAttempts":3,\
+      "retryInterval":1500,\
+      "reconnectionTimeout":3000,\
+      "failedAttempts":3,\
+      "subscriptionsPerConnection":5,\
+      "clientName":null,\
+      "password":"GECWzPU4Yib",\
+      "address": "redis://ucode-test-redis.aax6.cn:6379",\
+      "subscriptionConnectionMinimumIdleSize":1,\
+      "subscriptionConnectionPoolSize":50,\
+      "connectionMinimumIdleSize":10,\
+      "connectionPoolSize":64,\
+      "database":4,\
+      "dnsMonitoring":false,\
+      "dnsMonitoringInterval":5000\
+   },\
+   "threads":0,\
+   "nettyThreads":0,\
+   "codec":null,\
+   "useLinuxNativeEpoll":false\
+}
+
+#warn
+#\u914D\u7F6E\u9884\u8B66\u670D\u52A1\u7684\u4F01\u4E1Aid \u6B63\u5F0F\u73AF\u58831000000 
+sao.aw.warn.eseId=1
+spring.data.mongodb.uri=mongodb://app_test:IOeIeBnS1yW0tQ@ucode-test-mongo.aax6.cn:27017/
+spring.data.mongodb.database=ucode
+spring.data.mongodb.authentication-database=admin
+spring.kafka.producer.bootstrap-servers=ucode-test-ckafka.aax6.cn:9092
+spring.kafka.consumer.bootstrap-servers=ucode-test-ckafka.aax6.cn:9092
+
+sao.aw.thread-pool.corePoolSize.tagmetadata=3
+sao.aw.thread-pool.maxPoolSize.tagmetadata=5
+sao.aw.thread-pool.queueCapacity.tagmetadata=15
+sao.aw.thread-pool.corePoolSize.thirdtagmetadata=3
+sao.aw.thread-pool.maxPoolSize.thirdtagmetadata=5
+sao.aw.thread-pool.queueCapacity.thirdtagmetadata=15
+sao.aw.thread-pool.corePoolSize.linkconsume=3
+sao.aw.thread-pool.maxPoolSize.linkconsume=5
+sao.aw.thread-pool.queueCapacity.linkconsume=15
+sao.aw.custom.linkConsume.1000105 = wlylinkconsume
+sao.aw.thread-pool.corePoolSize.wlylinkconsume=1
+sao.aw.thread-pool.maxPoolSize.wlylinkconsume=1
+sao.aw.thread-pool.queueCapacity.wlylinkconsume=0
+
+sao.ucode.tagsql.enable=true
+spring.datasource.tagsql.jdbc-url=jdbc:mysql://ucode-test-mysql.aax6.cn:3306/code?useUnicode=true&characterEncoding=utf-8&useLegacyDatetimeCode=false&serverTimezone=UTC
+spring.datasource.tagsql.initialize=false
+spring.datasource.tagsql.username=app_test
+spring.datasource.tagsql.password=Qwz3bEAP3D+2yoDf
+spring.datasource.tagsql.driver-class-name=com.mysql.jdbc.Driver
+
+spring.cloud.stream.binders.defaultBinder.environment.spring.rabbitmq.virtual-host=/test
+
+#warn
+so.sao.customclass-loader.enable=true
+so.sao.custom.classPath=/data/logs/customClass
+#blockchain ckafka
+kafka.blockchain.producer-topic=test_changyu_ts_send
+kafka.blockchain.consumer-topic=test_changyu_ts_result
+kafka.blockchain.host=ckafka-7a758rn2.ap-shanghai.ckafka.tencentcloudmq.com:6020
+kafka.blockchain.username=ckafka-7a758rn2#changyu-ts-ckafka
+kafka.blockchain.password=kfanh7su
+kafka.blockchain.group-id=test_changyu_groupId
+kafka.blockchain.acks=1
+kafka.blockchain.retries=10
+kafka.blockchain.auto-offset-reset=earliest
+kafka.blockchain.auto-commit-interval=100
+kafka.blockchain.enable-auto-commit=true
+kafka.blockchain.max-poll-records=1
+kafka.blockchain.concurrency=4
+#\u9700\u8981\u63A8\u9001\u7801\u81F3\u533A\u5757\u94FE\u7684\u4F01\u4E1A,\u591A\u4E2A\u7528\u9017\u53F7\u5206\u9694
+blockchain.business.eseIds=1000135
+#kafka
+#producer
+kafka.app.topic.warning=warn
+spring.kafka.producer.key-serializer=org.apache.kafka.common.serialization.StringSerializer
+spring.kafka.producer.value-serializer=org.apache.kafka.common.serialization.StringSerializer
+spring.kafka.producer.acks=all
+spring.kafka.producer.retries=10
+#\u00E6\u008C\u0087\u00E5\u00AE\u009A\u00E7\u0094\u009F\u00E4\u00BA\u00A7\u00E8\u0080\u0085\u00E4\u00BB\u00A3\u00E7\u0090\u0086\u00E5\u009C\u00B0\u00E5\u009D\u0080
+
+#consumer
+spring.kafka.consumer.auto-offset-reset=earliest
+spring.kafka.consumer.group-id=aw
+spring.kafka.consumer.enable-auto-commit=true
+spring.kafka.consumer.auto-commit-interval=100
+spring.kafka.consumer.max-poll-records=1
+spring.kafka.consumer.key-deserializer=org.apache.kafka.common.serialization.StringDeserializer
+spring.kafka.consumer.value-deserializer=org.apache.kafka.common.serialization.StringDeserializer
+spring.kafka.listener.concurrency=1
+
+spring.cloud.stream.defaultBinder=defaultBinder
+spring.cloud.stream.binders.defaultBinder.type=rabbit
+spring.cloud.stream.binders.defaultBinder.environment.spring.rabbitmq.host=10.0.40.8
+spring.cloud.stream.bindings.springCloudBusOutput.destination=springCloudBus
+spring.cloud.stream.bindings.springCloudBusInput.destination=springCloudBus
+
+#actuator
+management.endpoints.web.exposure.include=*
+management.endpoint.health.show-details=always
+#cos
+cos.secretId=AKIDTZHoCXFALSVN6eruRqEWRGxWuFaLiVWN
+cos.secretKey=undIm5JQUNj8MPH6kEXI0X4UFxzrfL1g
+cos.region=ap-shanghai
+cos.appid=1258104979
+#codekey
+so.sao.code-key.enable=true
+so.sao.code.key[0].uri=UT.AAX6.CN/A
+so.sao.code.key[0].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[1].uri=sao.so/xm
+so.sao.code.key[1].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[2].uri=sao.ni/h
+so.sao.code.key[2].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[3].uri=sao.wo/y
+so.sao.code.key[3].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[4].uri=USAO8.COM/A
+so.sao.code.key[4].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[5].uri=UT.AAX6.CN/L
+so.sao.code.key[5].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[6].uri=UT.AAX6.CN/M
+so.sao.code.key[6].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[7].uri=UT.AAX6.CN/D
+so.sao.code.key[7].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[8].uri=UT.AAX6.CN/AA
+so.sao.code.key[8].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[9].uri=UT.AAX6.CN/BB
+so.sao.code.key[9].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[10].uri=UT.AAX6.CN/CC
+so.sao.code.key[10].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[11].uri=UT.AAX6.CN/DD
+so.sao.code.key[11].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[12].uri=UT.AAX6.CN/EE
+so.sao.code.key[12].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[13].uri=UT.AAX6.CN/FF
+so.sao.code.key[13].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[14].uri=UT.AAX6.CN/GG
+so.sao.code.key[14].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[15].uri=UT.AAX6.CN/HH
+so.sao.code.key[15].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[16].uri=UT.AAX6.CN/II
+so.sao.code.key[16].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[17].uri=UT.AAX6.CN/JJ
+so.sao.code.key[17].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[18].uri=UT.AAX6.CN/KK
+so.sao.code.key[18].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[19].uri=UT.AAX6.CN/LL
+so.sao.code.key[19].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[20].uri=UT.AAX6.CN/MM
+so.sao.code.key[20].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[21].uri=UT.AAX6.CN/NN
+so.sao.code.key[21].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[22].uri=UT.AAX6.CN/OO
+so.sao.code.key[22].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[23].uri=UT.AAX6.CN/PP
+so.sao.code.key[23].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[24].uri=UT.AAX6.CN/QQ
+so.sao.code.key[24].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[25].uri=UT.AAX6.CN/RR
+so.sao.code.key[25].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[26].uri=UT.AAX6.CN/SS
+so.sao.code.key[26].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[27].uri=UT.AAX6.CN/TT
+so.sao.code.key[27].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[28].uri=UT.AAX6.CN/UU
+so.sao.code.key[28].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[29].uri=UT.AAX6.CN/VV
+so.sao.code.key[29].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[30].uri=UT.AAX6.CN/WW
+so.sao.code.key[30].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[31].uri=UT.AAX6.CN/XX
+so.sao.code.key[31].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[32].uri=UT.AAX6.CN/YY
+so.sao.code.key[32].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[33].uri=UT.AAX6.CN/ZZ
+so.sao.code.key[33].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[34].uri=wx3b396398f188d165/1000065
+so.sao.code.key[34].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[35].uri=wx3b396398f188d165/134
+so.sao.code.key[35].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[36].uri=wx3b396398f188d165/135
+so.sao.code.key[36].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[37].uri=wx3b396398f188d165/1000062
+so.sao.code.key[37].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[38].uri=wx3b396398f188d165/124
+so.sao.code.key[38].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[39].uri=wx76a3da737fd50476/1000062
+so.sao.code.key[39].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[40].uri=wx76a3da737fd50476/135
+so.sao.code.key[40].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[41].uri=THIRD.AAX6.CN/A
+so.sao.code.key[41].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[42].uri=THIRD.AAX6.CN/B
+so.sao.code.key[42].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[43].uri=DD.SAO.SO/Q
+so.sao.code.key[43].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[44].uri=NJYCD/TEST
+so.sao.code.key[44].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[45].uri=UCODEUATQD.PLSBD.COM/T
+so.sao.code.key[45].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[46].uri=DEVT.TIENS.COM/X
+so.sao.code.key[46].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[47].uri=DEVT.TIENS.COM/M
+so.sao.code.key[47].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[48].uri=DEVT.TIENS.COM/H
+so.sao.code.key[48].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[49].uri=DEVT.TIENS.COM/P
+so.sao.code.key[49].password=kye1m7bQk40ggCp1kdWJfsoJmwdqleXivkR5kfPM
+so.sao.code.key[50].uri=DEVT.TIENS.COM/S
+so.sao.code.key[50].password=5D3lEajJURTPNm4txf0814OFKYWTfuQDtGlKiBIK

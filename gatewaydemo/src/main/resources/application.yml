@@ -17,12 +17,12 @@ spring:
           uri: lb://producer
           predicates:
             - Path=/*/producer/**
-            - After=2021-07-20T10:42:47.789+08:00[Asia/Shanghai]
-            - Weight=group1, 2
-        - id: producer1
-          uri: lb://producer1
-          predicates:
-            - Path=/*/producer/**
-            - After=2021-07-20T10:42:47.789+08:00[Asia/Shanghai]
-            - Weight=group1, 8
+#            - After=2021-07-20T10:42:47.789+08:00[Asia/Shanghai]
+#            - Weight=group1, 2
+#        - id: producer1
+#          uri: lb://producer1
+#          predicates:
+#            - Path=/*/producer/**
+#            - After=2021-07-20T10:42:47.789+08:00[Asia/Shanghai]
+#            - Weight=group1, 8
 

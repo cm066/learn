@@ -1,0 +1,12 @@
+aa:
+  listbean:
+    value:
+      -1
+      -2
+      -3
+    name: lufei
+
+sao:
+  captcha:
+    paths:
+      - {path: /isv/vi, require: true, strategy: header, name: ver-code}

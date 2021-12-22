@@ -27,10 +27,12 @@
         <module name="account" />
         <module name="dockerdemo1" />
         <module name="order" />
+        <module name="algorithm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="account" target="1.8" />
+      <module name="algorithm" target="1.8" />
       <module name="base" target="1.8" />
       <module name="bash" target="1.8" />
       <module name="business" target="1.8" />

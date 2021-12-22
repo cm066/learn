@@ -1,4 +1,4 @@
-package com.cm.config;
+package com.cm.Common;
 
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextClosedEvent;

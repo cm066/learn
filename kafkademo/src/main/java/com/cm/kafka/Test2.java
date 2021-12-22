@@ -1,21 +1,34 @@
 package com.cm.kafka;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.concurrent.CountDownLatch;
 
 public class Test2 {
-    public static void main(String[] args) {
-        System.out.println(-1L ^ (-1L << 12L));
+//   public static final ThreadLocal<Integer> threadLocal1 = new ThreadLocal<>();
+//   public static final ThreadLocal<String> threadLocal2 = new ThreadLocal<>();
+   public static final CountDownLatch countDownLatch = new CountDownLatch(1);
+    public static void main(String[] args) throws InterruptedException {
 
-        SnowFlake snowFlake = new SnowFlake(10L, 5L);
-        for (int i = 0; i < 10; i++) {
-            System.out.println(snowFlake.nextId());
-        }
+        new Thread(()->{
+            ThreadLocal<Integer> threadLocal1 = new ThreadLocal<>();
+            ThreadLocal<String> threadLocal2 = new ThreadLocal<>();
+            threadLocal1.set(1);
+            threadLocal2.set("3333");
+            test(threadLocal1,threadLocal2);
+            countDownLatch.countDown();
+        }).start();
+        countDownLatch.await();
+//        String s = threadLocal2.get();
+//        if (s == null){
+//            s = "bb";
+//        }
+        System.out.println(111);
+    }
 
-        ArrayList<Object> objects = new ArrayList<>();
-        objects.add(1);
-        HashMap<String, String> map = new HashMap<>();
-        map.put("1", "1");
-
+    public static void test(ThreadLocal<Integer> threadLocal1, ThreadLocal<String> threadLocal2){
+        threadLocal1.get();
+        System.out.println(threadLocal1.get()+threadLocal2.get());
+        threadLocal1.remove();
+        threadLocal2.remove();
+        System.out.println(threadLocal1.get()+threadLocal2.get());
     }
 }

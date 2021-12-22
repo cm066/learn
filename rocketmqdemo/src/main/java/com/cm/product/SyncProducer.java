@@ -15,7 +15,7 @@ public class SyncProducer {
     public static void main(String[] args) throws MQClientException, RemotingException, InterruptedException, MQBrokerException {
         //指定生产组队的名称
         DefaultMQProducer producer = new DefaultMQProducer("pg");
-        producer.setNamesrvAddr("192.168.224.120:9876");
+        producer.setNamesrvAddr("127.0.0.1:9876");
         producer.start();
         //默认为2次，这个是发送失败后重发的次数
         producer.setRetryTimesWhenSendFailed(3);

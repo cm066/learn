@@ -1,0 +1,329 @@
+"2021-11-17 13:59:16.891 main INFO   com.cm.GracefulApplication.?:? - No active profile set, falling back to default profiles: default
+""2021-11-17 13:59:17.758 main INFO   o.s.c.c.scope.GenericScope.?:? - BeanFactory id=5dd062b3-4630-3951-ae18-6ef656f14688
+""2021-11-17 14:00:25.934 main INFO   com.cm.GracefulApplication.?:? - No active profile set, falling back to default profiles: default
+""2021-11-17 14:00:26.745 main INFO   o.s.c.c.scope.GenericScope.?:? - BeanFactory id=5dd062b3-4630-3951-ae18-6ef656f14688
+""2021-11-17 14:00:27.045 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:00:27.047 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:00:27.048 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:00:27.277 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat initialized with port(s): 3333 (http)
+""2021-11-17 14:00:27.286 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Initializing ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:00:27.286 main INFO   o.a.c.core.StandardService.?:? - Starting service [Tomcat]
+""2021-11-17 14:00:27.286 main INFO   o.a.c.core.StandardEngine.?:? - Starting Servlet engine: [Apache Tomcat/9.0.46]
+""2021-11-17 14:00:27.288 main INFO   o.a.c.c.AprLifecycleListener.?:? - An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+""2021-11-17 14:00:27.288 main INFO   o.a.c.c.AprLifecycleListener.?:? - Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+""2021-11-17 14:00:27.288 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+""2021-11-17 14:00:27.288 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+""2021-11-17 14:00:28.357 main INFO   o.a.c.c.AprLifecycleListener.?:? - OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+""2021-11-17 14:00:28.447 main INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring embedded WebApplicationContext
+""2021-11-17 14:00:28.447 main INFO   o.s.b.w.s.c.ServletWebServerApplicationContext.?:? - Root WebApplicationContext: initialization completed in 2496 ms
+""2021-11-17 14:00:28.646 main INFO   o.s.s.c.ThreadPoolTaskExecutor.?:? - Initializing ExecutorService 'threadPoolTaskExecutor'
+""2021-11-17 14:00:29.376 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:00:29.379 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:00:29.445 main INFO   o.s.s.c.ThreadPoolTaskScheduler.?:? - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+""2021-11-17 14:00:30.230 main INFO   o.s.b.a.e.w.EndpointLinksResolver.?:? - Exposing 1 endpoint(s) beneath base path '/actuator'
+""2021-11-17 14:00:30.291 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Starting ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:00:30.308 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat started on port(s): 3333 (http) with context path ''
+""2021-11-17 14:00:30.733 main INFO   c.a.c.n.r.NacosServiceRegistry.?:? - nacos registry, DEFAULT_GROUP graceful-service 192.168.102.244:3333 register finished
+""2021-11-17 14:00:30.746 main INFO   com.cm.GracefulApplication.?:? - Started GracefulApplication in 6.406 seconds (JVM running for 7.256)
+""2021-11-17 14:00:30.752 main INFO   c.c.c.StartAndStopApplicationListens.?:? - 应用启动成功，预相关加载数据
+""2021-11-17 14:00:31.434 RMI TCP Connection(3)-192.168.224.1 INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-11-17 14:00:31.434 RMI TCP Connection(3)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Initializing Servlet 'dispatcherServlet'
+""2021-11-17 14:00:31.440 RMI TCP Connection(3)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Completed initialization in 6 ms
+""2021-11-17 14:01:35.962 http-nio-3333-exec-6 INFO   com.cm.log.SysLogService.?:? - ["aa"]
+""2021-11-17 14:06:06.604 main INFO   com.cm.GracefulApplication.?:? - No active profile set, falling back to default profiles: default
+""2021-11-17 14:06:07.408 main INFO   o.s.c.c.scope.GenericScope.?:? - BeanFactory id=5dd062b3-4630-3951-ae18-6ef656f14688
+""2021-11-17 14:06:07.583 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:06:07.584 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:06:07.586 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:06:07.779 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat initialized with port(s): 3333 (http)
+""2021-11-17 14:06:07.787 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Initializing ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:06:07.787 main INFO   o.a.c.core.StandardService.?:? - Starting service [Tomcat]
+""2021-11-17 14:06:07.787 main INFO   o.a.c.core.StandardEngine.?:? - Starting Servlet engine: [Apache Tomcat/9.0.46]
+""2021-11-17 14:06:07.789 main INFO   o.a.c.c.AprLifecycleListener.?:? - An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+""2021-11-17 14:06:07.789 main INFO   o.a.c.c.AprLifecycleListener.?:? - Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+""2021-11-17 14:06:07.789 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+""2021-11-17 14:06:07.789 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+""2021-11-17 14:06:08.849 main INFO   o.a.c.c.AprLifecycleListener.?:? - OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+""2021-11-17 14:06:08.935 main INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring embedded WebApplicationContext
+""2021-11-17 14:06:08.935 main INFO   o.s.b.w.s.c.ServletWebServerApplicationContext.?:? - Root WebApplicationContext: initialization completed in 2316 ms
+""2021-11-17 14:06:09.109 main INFO   o.s.s.c.ThreadPoolTaskExecutor.?:? - Initializing ExecutorService 'threadPoolTaskExecutor'
+""2021-11-17 14:06:09.730 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:06:09.734 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:06:09.802 main INFO   o.s.s.c.ThreadPoolTaskScheduler.?:? - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+""2021-11-17 14:06:10.588 main INFO   o.s.b.a.e.w.EndpointLinksResolver.?:? - Exposing 1 endpoint(s) beneath base path '/actuator'
+""2021-11-17 14:06:10.651 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Starting ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:06:10.669 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat started on port(s): 3333 (http) with context path ''
+""2021-11-17 14:06:11.101 main INFO   c.a.c.n.r.NacosServiceRegistry.?:? - nacos registry, DEFAULT_GROUP graceful-service 192.168.102.244:3333 register finished
+""2021-11-17 14:06:11.114 main INFO   com.cm.GracefulApplication.?:? - Started GracefulApplication in 5.969 seconds (JVM running for 6.709)
+""2021-11-17 14:06:11.119 main INFO   c.c.c.StartAndStopApplicationListens.?:? - 应用启动成功，预相关加载数据
+""2021-11-17 14:06:11.391 RMI TCP Connection(4)-192.168.224.1 INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-11-17 14:06:11.391 RMI TCP Connection(4)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Initializing Servlet 'dispatcherServlet'
+""2021-11-17 14:06:11.402 RMI TCP Connection(4)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Completed initialization in 11 ms
+""2021-11-17 14:06:39.752 http-nio-3333-exec-1 INFO   com.cm.log.SysLogService.?:? - ["aa"]
+""2021-11-17 14:06:42.553 http-nio-3333-exec-2 INFO   com.cm.log.SysLogService.?:? - ["aa"]
+""2021-11-17 14:06:42.800 http-nio-3333-exec-3 INFO   com.cm.log.SysLogService.?:? - ["aa"]
+""2021-11-17 14:06:42.985 http-nio-3333-exec-9 INFO   com.cm.log.SysLogService.?:? - ["aa"]
+""2021-11-17 14:06:43.208 http-nio-3333-exec-5 INFO   com.cm.log.SysLogService.?:? - ["aa"]
+""2021-11-17 14:08:33.359 main INFO   com.cm.GracefulApplication.?:? - No active profile set, falling back to default profiles: default
+""2021-11-17 14:08:34.094 main INFO   o.s.c.c.scope.GenericScope.?:? - BeanFactory id=5dd062b3-4630-3951-ae18-6ef656f14688
+""2021-11-17 14:08:34.245 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:08:34.246 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:08:34.247 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:08:34.434 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat initialized with port(s): 3333 (http)
+""2021-11-17 14:08:34.441 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Initializing ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:08:34.441 main INFO   o.a.c.core.StandardService.?:? - Starting service [Tomcat]
+""2021-11-17 14:08:34.441 main INFO   o.a.c.core.StandardEngine.?:? - Starting Servlet engine: [Apache Tomcat/9.0.46]
+""2021-11-17 14:08:34.443 main INFO   o.a.c.c.AprLifecycleListener.?:? - An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+""2021-11-17 14:08:34.443 main INFO   o.a.c.c.AprLifecycleListener.?:? - Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+""2021-11-17 14:08:34.443 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+""2021-11-17 14:08:34.443 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+""2021-11-17 14:08:35.473 main INFO   o.a.c.c.AprLifecycleListener.?:? - OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+""2021-11-17 14:08:35.552 main INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring embedded WebApplicationContext
+""2021-11-17 14:08:35.552 main INFO   o.s.b.w.s.c.ServletWebServerApplicationContext.?:? - Root WebApplicationContext: initialization completed in 2179 ms
+""2021-11-17 14:08:35.720 main INFO   o.s.s.c.ThreadPoolTaskExecutor.?:? - Initializing ExecutorService 'threadPoolTaskExecutor'
+""2021-11-17 14:08:36.338 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:08:36.341 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:08:36.405 main INFO   o.s.s.c.ThreadPoolTaskScheduler.?:? - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+""2021-11-17 14:08:37.145 main INFO   o.s.b.a.e.w.EndpointLinksResolver.?:? - Exposing 1 endpoint(s) beneath base path '/actuator'
+""2021-11-17 14:08:37.205 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Starting ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:08:37.222 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat started on port(s): 3333 (http) with context path ''
+""2021-11-17 14:08:37.650 main INFO   c.a.c.n.r.NacosServiceRegistry.?:? - nacos registry, DEFAULT_GROUP graceful-service 192.168.102.244:3333 register finished
+""2021-11-17 14:08:37.663 main INFO   com.cm.GracefulApplication.?:? - Started GracefulApplication in 5.934 seconds (JVM running for 8.199)
+""2021-11-17 14:08:37.667 main INFO   c.c.c.StartAndStopApplicationListens.?:? - 应用启动成功，预相关加载数据
+""2021-11-17 14:08:38.165 RMI TCP Connection(3)-192.168.224.1 INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-11-17 14:08:38.165 RMI TCP Connection(3)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Initializing Servlet 'dispatcherServlet'
+""2021-11-17 14:08:38.172 RMI TCP Connection(3)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Completed initialization in 7 ms
+""2021-11-17 14:09:05.196 main INFO   com.cm.GracefulApplication.?:? - No active profile set, falling back to default profiles: default
+""2021-11-17 14:09:05.944 main INFO   o.s.c.c.scope.GenericScope.?:? - BeanFactory id=5dd062b3-4630-3951-ae18-6ef656f14688
+""2021-11-17 14:09:06.101 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:09:06.103 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:09:06.104 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:09:06.309 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat initialized with port(s): 3333 (http)
+""2021-11-17 14:09:06.318 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Initializing ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:09:06.319 main INFO   o.a.c.core.StandardService.?:? - Starting service [Tomcat]
+""2021-11-17 14:09:06.319 main INFO   o.a.c.core.StandardEngine.?:? - Starting Servlet engine: [Apache Tomcat/9.0.46]
+""2021-11-17 14:09:06.321 main INFO   o.a.c.c.AprLifecycleListener.?:? - An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+""2021-11-17 14:09:06.321 main INFO   o.a.c.c.AprLifecycleListener.?:? - Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+""2021-11-17 14:09:06.321 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+""2021-11-17 14:09:06.321 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+""2021-11-17 14:09:07.382 main INFO   o.a.c.c.AprLifecycleListener.?:? - OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+""2021-11-17 14:09:07.461 main INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring embedded WebApplicationContext
+""2021-11-17 14:09:07.461 main INFO   o.s.b.w.s.c.ServletWebServerApplicationContext.?:? - Root WebApplicationContext: initialization completed in 2251 ms
+""2021-11-17 14:09:07.636 main INFO   o.s.s.c.ThreadPoolTaskExecutor.?:? - Initializing ExecutorService 'threadPoolTaskExecutor'
+""2021-11-17 14:09:08.222 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:09:08.225 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:09:08.287 main INFO   o.s.s.c.ThreadPoolTaskScheduler.?:? - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+""2021-11-17 14:09:09.030 main INFO   o.s.b.a.e.w.EndpointLinksResolver.?:? - Exposing 1 endpoint(s) beneath base path '/actuator'
+""2021-11-17 14:09:09.090 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Starting ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:09:09.106 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat started on port(s): 3333 (http) with context path ''
+""2021-11-17 14:09:09.529 main INFO   c.a.c.n.r.NacosServiceRegistry.?:? - nacos registry, DEFAULT_GROUP graceful-service 192.168.102.244:3333 register finished
+""2021-11-17 14:09:09.542 main INFO   com.cm.GracefulApplication.?:? - Started GracefulApplication in 5.653 seconds (JVM running for 6.436)
+""2021-11-17 14:09:09.547 main INFO   c.c.c.StartAndStopApplicationListens.?:? - 应用启动成功，预相关加载数据
+""2021-11-17 14:09:09.897 RMI TCP Connection(2)-192.168.224.1 INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-11-17 14:09:09.897 RMI TCP Connection(2)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Initializing Servlet 'dispatcherServlet'
+""2021-11-17 14:09:09.909 RMI TCP Connection(2)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Completed initialization in 12 ms
+""2021-11-17 14:10:37.565 http-nio-3333-exec-4 INFO   com.cm.log.SysLogService.?:? - ["mm"]
+""2021-11-17 14:14:42.279 main INFO   com.cm.GracefulApplication.?:? - No active profile set, falling back to default profiles: default
+""2021-11-17 14:14:43.042 main INFO   o.s.c.c.scope.GenericScope.?:? - BeanFactory id=5dd062b3-4630-3951-ae18-6ef656f14688
+""2021-11-17 14:14:43.207 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:14:43.209 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:14:43.211 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:14:43.417 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat initialized with port(s): 3333 (http)
+""2021-11-17 14:14:43.425 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Initializing ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:14:43.426 main INFO   o.a.c.core.StandardService.?:? - Starting service [Tomcat]
+""2021-11-17 14:14:43.426 main INFO   o.a.c.core.StandardEngine.?:? - Starting Servlet engine: [Apache Tomcat/9.0.46]
+""2021-11-17 14:14:43.428 main INFO   o.a.c.c.AprLifecycleListener.?:? - An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+""2021-11-17 14:14:43.428 main INFO   o.a.c.c.AprLifecycleListener.?:? - Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+""2021-11-17 14:14:43.428 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+""2021-11-17 14:14:43.429 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+""2021-11-17 14:14:44.487 main INFO   o.a.c.c.AprLifecycleListener.?:? - OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+""2021-11-17 14:14:44.581 main INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring embedded WebApplicationContext
+""2021-11-17 14:14:44.581 main INFO   o.s.b.w.s.c.ServletWebServerApplicationContext.?:? - Root WebApplicationContext: initialization completed in 2287 ms
+""2021-11-17 14:14:44.790 main INFO   o.s.s.c.ThreadPoolTaskExecutor.?:? - Initializing ExecutorService 'threadPoolTaskExecutor'
+""2021-11-17 14:14:45.530 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:14:45.534 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:14:45.596 main INFO   o.s.s.c.ThreadPoolTaskScheduler.?:? - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+""2021-11-17 14:14:46.355 main INFO   o.s.b.a.e.w.EndpointLinksResolver.?:? - Exposing 1 endpoint(s) beneath base path '/actuator'
+""2021-11-17 14:14:46.415 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Starting ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:14:46.433 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat started on port(s): 3333 (http) with context path ''
+""2021-11-17 14:14:46.854 main INFO   c.a.c.n.r.NacosServiceRegistry.?:? - nacos registry, DEFAULT_GROUP graceful-service 192.168.102.244:3333 register finished
+""2021-11-17 14:14:46.868 main INFO   com.cm.GracefulApplication.?:? - Started GracefulApplication in 6.028 seconds (JVM running for 6.799)
+""2021-11-17 14:14:46.873 main INFO   c.c.c.StartAndStopApplicationListens.?:? - 应用启动成功，预相关加载数据
+""2021-11-17 14:14:47.482 RMI TCP Connection(2)-192.168.224.1 INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-11-17 14:14:47.482 RMI TCP Connection(2)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Initializing Servlet 'dispatcherServlet'
+""2021-11-17 14:14:47.492 RMI TCP Connection(2)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Completed initialization in 10 ms
+""2021-11-17 14:14:59.053 http-nio-3333-exec-1 INFO   com.cm.log.SysLogService.:?? - ["mm"]
+""2021-11-17 14:14:59.053 http-nio-3333-exec-1 INFO   com.cm.log.SysLogService.?:? - SysLogDB(className=com.cm.log.TestController, methodName=test, params=["mm"], exeuTime=4, remark=测试, createDate=2021-11-17 02:14:59)
+""2021-11-17 14:15:00.433 http-nio-3333-exec-2 INFO   com.cm.log.SysLogService.?:? - ["mm"]
+""2021-11-17 14:15:00.433 http-nio-3333-exec-2 INFO   com.cm.log.SysLogService.?:? - SysLogDB(className=com.cm.log.TestController, methodName=test, params=["mm"], exeuTime=0, remark=测试, createDate=2021-11-17 02:15:00)
+""2021-11-17 14:15:00.675 http-nio-3333-exec-3 INFO   com.cm.log.SysLogService.?:? - ["mm"]
+""2021-11-17 14:15:00.675 http-nio-3333-exec-3 INFO   com.cm.log.SysLogService.?:? - SysLogDB(className=com.cm.log.TestController, methodName=test, params=["mm"], exeuTime=0, remark=测试, createDate=2021-11-17 02:15:00)
+""2021-11-17 14:15:01.710 http-nio-3333-exec-9 INFO   com.cm.log.SysLogService.?:? - ["mm"]
+""2021-11-17 14:15:01.710 http-nio-3333-exec-9 INFO   com.cm.log.SysLogService.?:? - SysLogDB(className=com.cm.log.TestController, methodName=test, params=["mm"], exeuTime=0, remark=测试, createDate=2021-11-17 02:15:01)
+""2021-11-17 14:15:02.609 http-nio-3333-exec-4 INFO   com.cm.log.SysLogService.?:? - ["mm"]
+""2021-11-17 14:15:02.609 http-nio-3333-exec-4 INFO   com.cm.log.SysLogService.?:? - SysLogDB(className=com.cm.log.TestController, methodName=test, params=["mm"], exeuTime=0, remark=测试, createDate=2021-11-17 02:15:02)
+""2021-11-17 14:15:08.652 http-nio-3333-exec-6 INFO   com.cm.log.SysLogService.?:? - ["mm"]
+""2021-11-17 14:15:08.652 http-nio-3333-exec-6 INFO   com.cm.log.SysLogService.?:? - SysLogDB(className=com.cm.log.TestController, methodName=test, params=["mm"], exeuTime=0, remark=测试, createDate=2021-11-17 02:15:08)
+""2021-11-17 14:18:59.439 main INFO   com.cm.GracefulApplication.?:? - No active profile set, falling back to default profiles: default
+""2021-11-17 14:19:00.254 main INFO   o.s.c.c.scope.GenericScope.?:? - BeanFactory id=5dd062b3-4630-3951-ae18-6ef656f14688
+""2021-11-17 14:19:00.407 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:19:00.408 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:19:00.410 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:19:00.602 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat initialized with port(s): 3333 (http)
+""2021-11-17 14:19:00.609 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Initializing ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:19:00.609 main INFO   o.a.c.core.StandardService.?:? - Starting service [Tomcat]
+""2021-11-17 14:19:00.610 main INFO   o.a.c.core.StandardEngine.?:? - Starting Servlet engine: [Apache Tomcat/9.0.46]
+""2021-11-17 14:19:00.611 main INFO   o.a.c.c.AprLifecycleListener.?:? - An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+""2021-11-17 14:19:00.611 main INFO   o.a.c.c.AprLifecycleListener.?:? - Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+""2021-11-17 14:19:00.611 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+""2021-11-17 14:19:00.611 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+""2021-11-17 14:19:01.655 main INFO   o.a.c.c.AprLifecycleListener.?:? - OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+""2021-11-17 14:19:01.754 main INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring embedded WebApplicationContext
+""2021-11-17 14:19:01.754 main INFO   o.s.b.w.s.c.ServletWebServerApplicationContext.?:? - Root WebApplicationContext: initialization completed in 2299 ms
+""2021-11-17 14:19:01.929 main INFO   o.s.s.c.ThreadPoolTaskExecutor.?:? - Initializing ExecutorService 'threadPoolTaskExecutor'
+""2021-11-17 14:19:02.554 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:19:02.556 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:19:02.630 main INFO   o.s.s.c.ThreadPoolTaskScheduler.?:? - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+""2021-11-17 14:19:03.402 main INFO   o.s.b.a.e.w.EndpointLinksResolver.?:? - Exposing 1 endpoint(s) beneath base path '/actuator'
+""2021-11-17 14:19:03.464 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Starting ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:19:03.484 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat started on port(s): 3333 (http) with context path ''
+""2021-11-17 14:19:03.914 main INFO   c.a.c.n.r.NacosServiceRegistry.?:? - nacos registry, DEFAULT_GROUP graceful-service 192.168.102.244:3333 register finished
+""2021-11-17 14:19:03.929 main INFO   com.cm.GracefulApplication.?:? - Started GracefulApplication in 5.918 seconds (JVM running for 6.765)
+""2021-11-17 14:19:03.934 main INFO   c.c.c.StartAndStopApplicationListens.?:? - 应用启动成功，预相关加载数据
+""2021-11-17 14:19:04.159 RMI TCP Connection(4)-192.168.224.1 INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-11-17 14:19:04.159 RMI TCP Connection(4)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Initializing Servlet 'dispatcherServlet'
+""2021-11-17 14:19:04.169 RMI TCP Connection(4)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Completed initialization in 10 ms
+""2021-11-17 14:19:16.437 http-nio-3333-exec-1 INFO   com.cm.log.TestController.?:? - hhhhhhhh
+""2021-11-17 14:19:16.440 http-nio-3333-exec-1 INFO   com.cm.log.SysLogService.?:? - ["mm"]
+""2021-11-17 14:19:16.440 http-nio-3333-exec-1 INFO   com.cm.log.SysLogService.?:? - SysLogDB(className=com.cm.log.TestController, methodName=test, params=["mm"], exeuTime=3, remark=测试, createDate=2021-11-17 02:19:16)
+""2021-11-17 14:37:39.128 main INFO   com.cm.GracefulApplication.?:? - No active profile set, falling back to default profiles: default
+""2021-11-17 14:37:39.875 main INFO   o.s.c.c.scope.GenericScope.?:? - BeanFactory id=2b0ad3ab-a1c6-32ca-89cd-fd63cb89c428
+""2021-11-17 14:37:40.026 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:37:40.028 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:37:40.030 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:37:40.217 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat initialized with port(s): 3333 (http)
+""2021-11-17 14:37:40.224 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Initializing ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:37:40.224 main INFO   o.a.c.core.StandardService.?:? - Starting service [Tomcat]
+""2021-11-17 14:37:40.224 main INFO   o.a.c.core.StandardEngine.?:? - Starting Servlet engine: [Apache Tomcat/9.0.46]
+""2021-11-17 14:37:40.226 main INFO   o.a.c.c.AprLifecycleListener.?:? - An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+""2021-11-17 14:37:40.226 main INFO   o.a.c.c.AprLifecycleListener.?:? - Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+""2021-11-17 14:37:40.226 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+""2021-11-17 14:37:40.226 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+""2021-11-17 14:37:41.272 main INFO   o.a.c.c.AprLifecycleListener.?:? - OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+""2021-11-17 14:37:41.355 main INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring embedded WebApplicationContext
+""2021-11-17 14:37:41.355 main INFO   o.s.b.w.s.c.ServletWebServerApplicationContext.?:? - Root WebApplicationContext: initialization completed in 2213 ms
+""2021-11-17 14:37:41.532 main INFO   o.s.s.c.ThreadPoolTaskExecutor.?:? - Initializing ExecutorService 'threadPoolTaskExecutor'
+""2021-11-17 14:37:42.117 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:37:42.120 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:37:42.181 main INFO   o.s.s.c.ThreadPoolTaskScheduler.?:? - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+""2021-11-17 14:37:42.920 main INFO   o.s.b.a.e.w.EndpointLinksResolver.?:? - Exposing 1 endpoint(s) beneath base path '/actuator'
+""2021-11-17 14:37:42.979 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Starting ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:37:42.996 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat started on port(s): 3333 (http) with context path ''
+""2021-11-17 14:37:43.419 main INFO   c.a.c.n.r.NacosServiceRegistry.?:? - nacos registry, DEFAULT_GROUP graceful-service 192.168.102.244:3333 register finished
+""2021-11-17 14:37:43.432 main INFO   com.cm.GracefulApplication.?:? - Started GracefulApplication in 5.663 seconds (JVM running for 6.445)
+""2021-11-17 14:37:43.435 main INFO   c.c.c.StartAndStopApplicationListens.?:? - 应用启动成功，预相关加载数据
+""2021-11-17 14:37:43.579 RMI TCP Connection(1)-192.168.224.1 INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-11-17 14:37:43.579 RMI TCP Connection(1)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Initializing Servlet 'dispatcherServlet'
+""2021-11-17 14:37:43.587 RMI TCP Connection(1)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Completed initialization in 8 ms
+""2021-11-17 14:37:49.456 http-nio-3333-exec-1 INFO   com.cm.log.TestController.?:? - hhhhhhhh
+""2021-11-17 14:37:49.460 http-nio-3333-exec-1 INFO   com.cm.log.SysLogService.?:? - ["mm"]
+""2021-11-17 14:37:49.460 http-nio-3333-exec-1 INFO   com.cm.log.SysLogService.?:? - SysLogDB(className=com.cm.log.TestController, methodName=test, params=["mm"], exeuTime=4, remark=测试, createDate=2021-11-17 02:37:49)
+""2021-11-17 14:40:04.319 main INFO   com.cm.GracefulApplication.?:? - No active profile set, falling back to default profiles: default
+""2021-11-17 14:40:05.128 main INFO   o.s.c.c.scope.GenericScope.?:? - BeanFactory id=2b0ad3ab-a1c6-32ca-89cd-fd63cb89c428
+""2021-11-17 14:40:05.300 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:40:05.302 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:40:05.304 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:40:05.503 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat initialized with port(s): 3333 (http)
+""2021-11-17 14:40:05.509 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Initializing ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:40:05.510 main INFO   o.a.c.core.StandardService.?:? - Starting service [Tomcat]
+""2021-11-17 14:40:05.511 main INFO   o.a.c.core.StandardEngine.?:? - Starting Servlet engine: [Apache Tomcat/9.0.46]
+""2021-11-17 14:40:05.512 main INFO   o.a.c.c.AprLifecycleListener.?:? - An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+""2021-11-17 14:40:05.512 main INFO   o.a.c.c.AprLifecycleListener.?:? - Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+""2021-11-17 14:40:05.513 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+""2021-11-17 14:40:05.513 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+""2021-11-17 14:40:06.560 main INFO   o.a.c.c.AprLifecycleListener.?:? - OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+""2021-11-17 14:40:06.640 main INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring embedded WebApplicationContext
+""2021-11-17 14:40:06.640 main INFO   o.s.b.w.s.c.ServletWebServerApplicationContext.?:? - Root WebApplicationContext: initialization completed in 2305 ms
+""2021-11-17 14:40:06.814 main INFO   o.s.s.c.ThreadPoolTaskExecutor.?:? - Initializing ExecutorService 'threadPoolTaskExecutor'
+""2021-11-17 14:40:07.398 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:40:07.401 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:40:07.464 main INFO   o.s.s.c.ThreadPoolTaskScheduler.?:? - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+""2021-11-17 14:40:08.210 main INFO   o.s.b.a.e.w.EndpointLinksResolver.?:? - Exposing 1 endpoint(s) beneath base path '/actuator'
+""2021-11-17 14:40:08.269 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Starting ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:40:08.287 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat started on port(s): 3333 (http) with context path ''
+""2021-11-17 14:40:08.709 main INFO   c.a.c.n.r.NacosServiceRegistry.?:? - nacos registry, DEFAULT_GROUP graceful-service 192.168.102.244:3333 register finished
+""2021-11-17 14:40:08.724 main INFO   com.cm.GracefulApplication.?:? - Started GracefulApplication in 5.864 seconds (JVM running for 6.575)
+""2021-11-17 14:40:08.729 main INFO   c.c.c.StartAndStopApplicationListens.?:? - 应用启动成功，预相关加载数据
+""2021-11-17 14:40:09.276 RMI TCP Connection(1)-192.168.224.1 INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-11-17 14:40:09.276 RMI TCP Connection(1)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Initializing Servlet 'dispatcherServlet'
+""2021-11-17 14:40:09.284 RMI TCP Connection(1)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Completed initialization in 8 ms
+""2021-11-17 14:40:18.421 http-nio-3333-exec-1 INFO   com.cm.log.TestController.?:? - hhhhhhhh
+""2021-11-17 14:40:18.425 http-nio-3333-exec-1 INFO   com.cm.log.SysLogService.?:? - ["mm"]
+""2021-11-17 14:40:18.425 http-nio-3333-exec-1 INFO   com.cm.log.SysLogService.?:? - SysLogDB(className=com.cm.log.TestController, methodName=test, params=["mm"], exeuTime=4, remark=测试, createDate=2021-11-17 02:40:18)
+""2021-11-17 14:41:11.663 main INFO   com.cm.GracefulApplication.?:? - No active profile set, falling back to default profiles: default
+""2021-11-17 14:41:12.462 main INFO   o.s.c.c.scope.GenericScope.?:? - BeanFactory id=2b0ad3ab-a1c6-32ca-89cd-fd63cb89c428
+""2021-11-17 14:41:12.620 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:41:12.621 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:41:12.623 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:41:12.822 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat initialized with port(s): 3333 (http)
+""2021-11-17 14:41:12.830 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Initializing ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:41:12.831 main INFO   o.a.c.core.StandardService.?:? - Starting service [Tomcat]
+""2021-11-17 14:41:12.832 main INFO   o.a.c.core.StandardEngine.?:? - Starting Servlet engine: [Apache Tomcat/9.0.46]
+""2021-11-17 14:41:12.833 main INFO   o.a.c.c.AprLifecycleListener.?:? - An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+""2021-11-17 14:41:12.834 main INFO   o.a.c.c.AprLifecycleListener.?:? - Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+""2021-11-17 14:41:12.834 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+""2021-11-17 14:41:12.834 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+""2021-11-17 14:41:13.880 main INFO   o.a.c.c.AprLifecycleListener.?:? - OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+""2021-11-17 14:41:13.966 main INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring embedded WebApplicationContext
+""2021-11-17 14:41:13.966 main INFO   o.s.b.w.s.c.ServletWebServerApplicationContext.?:? - Root WebApplicationContext: initialization completed in 2287 ms
+""2021-11-17 14:41:14.148 main INFO   o.s.s.c.ThreadPoolTaskExecutor.?:? - Initializing ExecutorService 'threadPoolTaskExecutor'
+""2021-11-17 14:41:14.754 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:41:14.757 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:41:14.821 main INFO   o.s.s.c.ThreadPoolTaskScheduler.?:? - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+""2021-11-17 14:41:15.584 main INFO   o.s.b.a.e.w.EndpointLinksResolver.?:? - Exposing 1 endpoint(s) beneath base path '/actuator'
+""2021-11-17 14:41:15.643 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Starting ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:41:15.662 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat started on port(s): 3333 (http) with context path ''
+""2021-11-17 14:41:16.093 main INFO   c.a.c.n.r.NacosServiceRegistry.?:? - nacos registry, DEFAULT_GROUP graceful-service 192.168.102.244:3333 register finished
+""2021-11-17 14:41:16.107 main INFO   com.cm.GracefulApplication.?:? - Started GracefulApplication in 5.876 seconds (JVM running for 6.616)
+""2021-11-17 14:41:16.112 main INFO   c.c.c.StartAndStopApplicationListens.?:? - 应用启动成功，预相关加载数据
+""2021-11-17 14:41:16.732 RMI TCP Connection(1)-192.168.224.1 INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-11-17 14:41:16.732 RMI TCP Connection(1)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Initializing Servlet 'dispatcherServlet'
+""2021-11-17 14:41:16.742 RMI TCP Connection(1)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Completed initialization in 10 ms
+""2021-11-17 14:41:51.589 http-nio-3333-exec-1 INFO  6d6bda49-016f-40ba-8e54-f9b51b29b86a com.cm.log.TestController.?:? - 6d6bda49-016f-40ba-8e54-f9b51b29b86a
+""2021-11-17 14:41:51.589 http-nio-3333-exec-1 INFO  6d6bda49-016f-40ba-8e54-f9b51b29b86a com.cm.log.TestController.?:? - hhhhhhhh
+""2021-11-17 14:41:51.594 http-nio-3333-exec-1 INFO  6d6bda49-016f-40ba-8e54-f9b51b29b86a com.cm.log.SysLogService.?:? - ["mm"]
+""2021-11-17 14:41:51.594 http-nio-3333-exec-1 INFO  6d6bda49-016f-40ba-8e54-f9b51b29b86a com.cm.log.SysLogService.?:? - SysLogDB(className=com.cm.log.TestController, methodName=test, params=["mm"], exeuTime=4, remark=测试, createDate=2021-11-17 02:41:51)
+""2021-11-17 14:52:21.570 main INFO   com.cm.GracefulApplication.?:? - No active profile set, falling back to default profiles: default
+""2021-11-17 14:52:22.393 main INFO   o.s.c.c.scope.GenericScope.?:? - BeanFactory id=2b0ad3ab-a1c6-32ca-89cd-fd63cb89c428
+""2021-11-17 14:52:22.549 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:52:22.550 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:52:22.552 main INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.?:? - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-11-17 14:52:22.766 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat initialized with port(s): 3333 (http)
+""2021-11-17 14:52:22.774 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Initializing ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:52:22.775 main INFO   o.a.c.core.StandardService.?:? - Starting service [Tomcat]
+""2021-11-17 14:52:22.775 main INFO   o.a.c.core.StandardEngine.?:? - Starting Servlet engine: [Apache Tomcat/9.0.46]
+""2021-11-17 14:52:22.776 main INFO   o.a.c.c.AprLifecycleListener.?:? - An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+""2021-11-17 14:52:22.776 main INFO   o.a.c.c.AprLifecycleListener.?:? - Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+""2021-11-17 14:52:22.776 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+""2021-11-17 14:52:22.776 main INFO   o.a.c.c.AprLifecycleListener.?:? - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+""2021-11-17 14:52:23.837 main INFO   o.a.c.c.AprLifecycleListener.?:? - OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+""2021-11-17 14:52:23.933 main INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring embedded WebApplicationContext
+""2021-11-17 14:52:23.933 main INFO   o.s.b.w.s.c.ServletWebServerApplicationContext.?:? - Root WebApplicationContext: initialization completed in 2348 ms
+""2021-11-17 14:52:24.112 main INFO   o.s.s.c.ThreadPoolTaskExecutor.?:? - Initializing ExecutorService 'threadPoolTaskExecutor'
+""2021-11-17 14:52:24.737 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:52:24.741 main INFO   c.n.c.s.URLConfigurationSource.?:? - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2021-11-17 14:52:24.809 main INFO   o.s.s.c.ThreadPoolTaskScheduler.?:? - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+""2021-11-17 14:52:25.556 main INFO   o.s.b.a.e.w.EndpointLinksResolver.?:? - Exposing 1 endpoint(s) beneath base path '/actuator'
+""2021-11-17 14:52:25.614 main INFO   o.a.c.http11.Http11NioProtocol.?:? - Starting ProtocolHandler ["http-nio-3333"]
+""2021-11-17 14:52:25.632 main INFO   o.s.b.w.e.t.TomcatWebServer.?:? - Tomcat started on port(s): 3333 (http) with context path ''
+""2021-11-17 14:52:26.071 main INFO   c.a.c.n.r.NacosServiceRegistry.?:? - nacos registry, DEFAULT_GROUP graceful-service 192.168.102.244:3333 register finished
+""2021-11-17 14:52:26.086 main INFO   com.cm.GracefulApplication.?:? - Started GracefulApplication in 5.854 seconds (JVM running for 6.678)
+""2021-11-17 14:52:26.090 main INFO   c.c.c.StartAndStopApplicationListens.?:? - 应用启动成功，预相关加载数据
+""2021-11-17 14:52:26.619 RMI TCP Connection(1)-192.168.224.1 INFO   o.a.c.c.C.[.[localhost].[/].?:? - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-11-17 14:52:26.619 RMI TCP Connection(1)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Initializing Servlet 'dispatcherServlet'
+""2021-11-17 14:52:26.629 RMI TCP Connection(1)-192.168.224.1 INFO   o.s.w.s.DispatcherServlet.?:? - Completed initialization in 10 ms
+""2021-11-17 14:52:59.734 http-nio-3333-exec-2 INFO  6183ac2f-ef91-495c-b675-b4b705b21a18 com.cm.log.TestController.?:? - 6183ac2f-ef91-495c-b675-b4b705b21a18
+""2021-11-17 14:52:59.734 http-nio-3333-exec-2 INFO  6183ac2f-ef91-495c-b675-b4b705b21a18 com.cm.log.TestController.?:? - hhhhhhhh
+""2021-11-17 14:52:59.738 http-nio-3333-exec-2 INFO  6183ac2f-ef91-495c-b675-b4b705b21a18 com.cm.log.SysLogService.?:? - ["mm"]
+""2021-11-17 14:52:59.738 http-nio-3333-exec-2 INFO  6183ac2f-ef91-495c-b675-b4b705b21a18 com.cm.log.SysLogService.?:? - SysLogDB(className=com.cm.log.TestController, methodName=test, params=["mm"], exeuTime=4, remark=测试, createDate=2021-11-17 02:52:59)
+"

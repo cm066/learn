@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/seataparent/account/account.iml" filepath="$PROJECT_DIR$/seataparent/account/account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm/algorithm.iml" filepath="$PROJECT_DIR$/algorithm/algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/base/bash.iml" filepath="$PROJECT_DIR$/base/bash.iml" />
       <module fileurl="file://$PROJECT_DIR$/seataparent/business/business.iml" filepath="$PROJECT_DIR$/seataparent/business/business.iml" />
       <module fileurl="file://$PROJECT_DIR$/consumer/consumer.iml" filepath="$PROJECT_DIR$/consumer/consumer.iml" />

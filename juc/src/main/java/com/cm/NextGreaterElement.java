@@ -22,7 +22,9 @@ public class NextGreaterElement {
         int[] ans = new int[nums.length];
         Stack<Integer> stack = new Stack<>();
         for (int i = nums.length - 1; i >= 0; i--) {
-            while (!stack.isEmpty() && nums[stack.peek()] <= nums[i]) stack.pop();
+            while (!stack.isEmpty() && nums[stack.peek()] <= nums[i]) {
+                stack.pop();
+            }
             ans[i] = stack.isEmpty() ? 0:stack.peek() - i;
             stack.push(i);
         }

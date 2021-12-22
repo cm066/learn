@@ -21,14 +21,13 @@ spring:
     #        namespace: f46bbdaa-f11e-414f-9530-e6a18cbf91f6
     sentinel:
       transport:
-        dashboard: localhost:8880
+        dashboard: localhost:8082
         port: 8719
   boot:
     admin:
       client:
         enabled: true
         url: http://localhost:6772
-
 seata:
   enabled: true
   application-id: ${spring.application.name}
@@ -79,3 +78,6 @@ logging:
   config: classpath:logback-spring.xml
   file:
     path: logs/boot-admin.log
+feign:
+  sentinel:
+    enabled: true

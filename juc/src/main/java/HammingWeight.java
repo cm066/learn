@@ -17,5 +17,10 @@ public class HammingWeight {
         a ^= b; //或操作，相同即为0，不相同即为1
         b ^= a;
         a ^=b;
+//        dkm09912@icloud.com
+//        Qw112211
     }
 }
+
+//select * from test where id > 100w limit 100w -200w
+ // id
